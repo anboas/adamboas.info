@@ -1,13 +1,14 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
-import SurfacePageHeader from '../../components/SurfacePageHeader.astro';
-
-// Blog is optional. Keeping the page for future writing, but no posts are published yet.
+import { withBase } from '../../utils/withBase';
 ---
 
-<SiteLayout title="Blog | Adam Boas" description="Notes on autonomy, governance, and execution." noindex={true}>
-	<SurfacePageHeader eyebrow="Archive" title="Blog" description="Reserved. I’ll publish short posts here over time." />
-	<section class="card mt-4 p-6 md:mt-5">
-		<p class="text-sm text-slate-300">No posts yet.</p>
-	</section>
+<SiteLayout
+	title="Writing | Adam Boas"
+	description="Redirecting to published writing."
+	canonicalHref="/writing/"
+	noindex={true}
+>
+	<meta http-equiv="refresh" content={`0; url=${withBase('/writing/')}`} />
+	<p class="text-slate-300">Redirecting to <a href={withBase('/writing/')}>/writing</a>…</p>
 </SiteLayout>

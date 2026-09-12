@@ -6,6 +6,26 @@ import { defineConfig } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
 
+const excludedSitemapPaths = new Set([
+	'/blog/',
+	'/content-license/',
+	'/credentials/',
+	'/opportunities/sam/',
+	'/opportunities/sbir/',
+	'/opportunities/sbir-sttr/',
+	'/papers/',
+]);
+
+function includeInSitemap(page) {
+	const pathname = new URL(page).pathname;
+	return (
+		!pathname.includes('/full/') &&
+		!pathname.includes('/research/') &&
+		!pathname.startsWith('/papers/') &&
+		!excludedSitemapPaths.has(pathname)
+	);
+}
+
 // https://astro.build/config
 export default defineConfig({
 	// Used for sitemap + RSS canonical URLs
@@ -18,7 +38,7 @@ export default defineConfig({
 		return b.endsWith('/') ? b : `${b}/`;
 	})(),
 
-	integrations: [mdx(), sitemap({ filter: (page) => !page.includes('/full/') && !page.includes('/research/') })],
+	integrations: [mdx(), sitemap({ filter: includeInSitemap })],
 
 	vite: {
 		plugins: [tailwindcss()],

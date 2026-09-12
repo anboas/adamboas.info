@@ -225,7 +225,8 @@ if (kind === 'paper') {
 	if (writingItem.data.type === 'memo' || writingItem.data.type === 'note') {
 		const artifactKind = writingItem.data.type === 'memo' ? 'memos' : 'notes';
 		writingGeneratedHtml = await tryReadGeneratedHtml(artifactKind, currentSlugForSchema);
-		if (writingGeneratedHtml) writingGeneratedHtml = applyBaseToGeneratedWritingHtml(writingGeneratedHtml, artifactKind);
+		if (writingGeneratedHtml)
+			writingGeneratedHtml = applyBaseToGeneratedWritingHtml(writingGeneratedHtml, artifactKind);
 	}
 	const writingTextSource = writingGeneratedHtml ? stripHtml(writingGeneratedHtml) : String(writingItem.body ?? '');
 	currentReadMinutes = estimateReadMinutes(writingTextSource);
@@ -283,7 +284,7 @@ const writingUrl = absoluteUrl('/writing/');
 					<div class="flex flex-nowrap items-center gap-2 md:flex-wrap">
 						{paper.data.pdfPath && (
 							<a
-								class="group rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm"
+								class="group inline-flex min-h-11 items-center rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:min-h-0 md:px-3 md:text-sm"
 								href={withBase(paper.data.pdfPath)}
 								target="_blank"
 								rel="noreferrer"
@@ -302,7 +303,7 @@ const writingUrl = absoluteUrl('/writing/');
 						)}
 						<button
 							type="button"
-							class="rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm"
+							class="inline-flex min-h-11 items-center rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:min-h-0 md:px-3 md:text-sm"
 							data-copy-link
 							data-track="Writing: Copy Link"
 						>
@@ -310,14 +311,14 @@ const writingUrl = absoluteUrl('/writing/');
 						</button>
 						<button
 							type="button"
-							class="rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm"
+							class="inline-flex min-h-11 items-center rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:min-h-0 md:px-3 md:text-sm"
 							data-copy-cite
 						>
 							📚 Cite
 						</button>
 						<a
 							data-track="Contact: Paper CTA"
-							class="rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm"
+							class="inline-flex min-h-11 items-center rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:min-h-0 md:px-3 md:text-sm"
 							href={contactHref}
 						>
 							💬 Discuss
@@ -437,7 +438,7 @@ const writingUrl = absoluteUrl('/writing/');
 					<div class="flex flex-nowrap items-center gap-2 md:flex-wrap">
 						{writingItem.data.pdfPath ? (
 							<a
-								class="group rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm"
+								class="group inline-flex min-h-11 items-center rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:min-h-0 md:px-3 md:text-sm"
 								href={withBase(writingItem.data.pdfPath)}
 								target="_blank"
 								rel="noreferrer"
@@ -459,7 +460,7 @@ const writingUrl = absoluteUrl('/writing/');
 						) : null}
 						<button
 							type="button"
-							class="rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm"
+							class="inline-flex min-h-11 items-center rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:min-h-0 md:px-3 md:text-sm"
 							data-copy-link
 							data-track="Writing: Copy Link"
 						>
@@ -467,14 +468,14 @@ const writingUrl = absoluteUrl('/writing/');
 						</button>
 						<button
 							type="button"
-							class="rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm"
+							class="inline-flex min-h-11 items-center rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:min-h-0 md:px-3 md:text-sm"
 							data-copy-cite
 						>
 							📚 Cite
 						</button>
 						<a
 							data-track="Contact: Writing CTA"
-							class="rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm"
+							class="inline-flex min-h-11 items-center rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:min-h-0 md:px-3 md:text-sm"
 							href={contactHref}
 						>
 							💬 Discuss

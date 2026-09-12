@@ -17,9 +17,13 @@ on:
   schedule:
     # Keep public 30-day chips reasonably fresh without committing analytics churn.
     - cron: '47 * * * *'
+  workflow_run:
+    workflows: [radar-feed-crawl, opportunities-drift-report]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
+  actions: read
   contents: write
 
 concurrency:
@@ -52,12 +56,67 @@ jobs:
       - name: Install deps
         run: npm ci
 
+      - name: Hydrate latest public pipeline snapshots
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          hydrate_snapshot() {
+            workflow="$1"
+            artifact="$2"
+            shift 2
+
+            run_id="$(gh run list \
+              --repo "${GITHUB_REPOSITORY}" \
+              --workflow "${workflow}" \
+              --status success \
+              --limit 1 \
+              --json databaseId \
+              --jq '.[0].databaseId')"
+
+            if [ -z "${run_id}" ] || [ "${run_id}" = "null" ]; then
+              echo "No successful ${workflow} run found; retaining repository snapshot."
+              return
+            fi
+
+            snapshot_dir="$(mktemp -d)"
+            gh run download "${run_id}" \
+              --repo "${GITHUB_REPOSITORY}" \
+              --name "${artifact}" \
+              --dir "${snapshot_dir}"
+
+            for filename in "$@"; do
+              cp "${snapshot_dir}/${filename}" "src/data/radar/${filename}"
+            done
+          }
+
+          hydrate_snapshot \
+            radar-feed-crawl.yml \
+            radar-feed-crawl-report \
+            feed-crawl-report-latest.json \
+            feed-crawl-report-latest.md
+
+          hydrate_snapshot \
+            opportunities-drift-report.yml \
+            opportunities-drift-report \
+            events-candidates-sam-opportunities-drift-latest.json \
+            events-candidates-sam-opportunities-drift-latest.md \
+            events-candidates-sam-opportunities-drift-snapshot.json
+
       - name: Fetch Plausible pageview counts
         env:
           PLAUSIBLE_API_KEY: ${{ secrets.PLAUSIBLE_API_KEY }}
           PLAUSIBLE_SITE_ID: ${{ secrets.PLAUSIBLE_SITE_ID }}
           PLAUSIBLE_DATE_RANGE: 30d
         run: node scripts/fetch-plausible-pageviews.mjs
+
+      - name: Fetch Plausible sitemap analytics
+        env:
+          PLAUSIBLE_API_KEY: ${{ secrets.PLAUSIBLE_API_KEY }}
+          PLAUSIBLE_SITE_ID: ${{ secrets.PLAUSIBLE_SITE_ID }}
+          PLAUSIBLE_DATE_RANGE: 30d
+        run: node scripts/fetch-plausible-sitemap-analytics.mjs
 
       - name: Fetch Plausible lead-funnel events (optional; manual deploys only)
         if: github.event_name == 'workflow_dispatch'

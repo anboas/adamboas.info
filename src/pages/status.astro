@@ -2,25 +2,8 @@
 import SiteLayout from '../layouts/SiteLayout.astro';
 import SurfacePageHeader from '../components/SurfacePageHeader.astro';
 import { withBase } from '../utils/withBase';
-import { radarEventsSeed } from '../data/radar/events';
-import sofweekIntel from '../data/radar/intel/sofweek-intel.json';
 import feedCrawlReport from '../data/radar/feed-crawl-report-latest.json';
 import opportunitiesDrift from '../data/radar/events-candidates-sam-opportunities-drift-latest.json';
-
-const samIntelOverrides: Record<string, any> = {
-	'radar-sofweek-2026': sofweekIntel,
-};
-
-function samIntel(event: (typeof radarEventsSeed)[number]) {
-	return samIntelOverrides[event.id] ?? event.ontology.acquisition?.samIntelligence ?? null;
-}
-
-const lastCollectedAt =
-	radarEventsSeed
-		.map((event) => samIntel(event)?.collectedAt as string | undefined)
-		.filter(Boolean)
-		.sort()
-		.at(-1) ?? null;
 
 const feedSummary = (feedCrawlReport?.summary ?? {}) as Record<string, number>;
 const feedGeneratedAt =
@@ -29,6 +12,7 @@ const feedGeneratedAt =
 const driftLatest = (opportunitiesDrift ?? {}) as any;
 const driftGeneratedAt = typeof driftLatest.generated_at === 'string' ? driftLatest.generated_at : null;
 const driftDeltas = (driftLatest.deltas ?? {}) as Record<string, number>;
+const driftMetrics = (driftLatest.metrics ?? {}) as Record<string, number>;
 
 const nowMs = Date.now();
 
@@ -62,11 +46,10 @@ function freshnessState(hours: number | null, warnHours: number, staleHours: num
 }
 
 const feedFreshness = freshnessState(ageHours(feedGeneratedAt), 18, 36);
-const samFreshness = freshnessState(ageHours(lastCollectedAt), 24, 48);
 const driftFreshness = freshnessState(ageHours(driftGeneratedAt), 24, 48);
 
-const staleSignals = [feedFreshness, samFreshness, driftFreshness].filter((x) => x.label === 'Stale').length;
-const laggingSignals = [feedFreshness, samFreshness, driftFreshness].filter((x) => x.label === 'Lagging').length;
+const staleSignals = [feedFreshness, driftFreshness].filter((x) => x.label === 'Stale').length;
+const laggingSignals = [feedFreshness, driftFreshness].filter((x) => x.label === 'Lagging').length;
 
 function fmtDate(value: string | null) {
 	if (!value) return '—';
@@ -167,19 +150,17 @@ function signed(value: number) {
 
 	<section class="mt-4 grid gap-4 lg:grid-cols-2">
 		<article class="card p-4 status-card">
-			<h2 class="status-title">SAM opportunities</h2>
-			<p class="status-copy">Freshness of opportunity enrichment inputs.</p>
+			<h2 class="status-title">Opportunity snapshot</h2>
+			<p class="status-copy">Latest generated opportunity drift and source-health snapshot.</p>
 			<div class="status-health-row">
-				<span class="status-pill" data-tone={samFreshness.tone}>SAM {samFreshness.label}</span>
-				<span class="status-health-detail">{samFreshness.detail}</span>
-			</div>
-			<div class="status-health-row mt-1">
-				<span class="status-pill" data-tone={driftFreshness.tone}>Drift {driftFreshness.label}</span>
+				<span class="status-pill" data-tone={driftFreshness.tone}>{driftFreshness.label}</span>
 				<span class="status-health-detail">{driftFreshness.detail}</span>
 			</div>
 			<div class="status-grid mt-3">
-				<div class="status-kpi"><span>Last collected</span><strong>{fmtDate(lastCollectedAt)}</strong></div>
-				<div class="status-kpi"><span>Drift refreshed</span><strong>{fmtDate(driftGeneratedAt)}</strong></div>
+				<div class="status-kpi"><span>Generated</span><strong>{fmtDate(driftGeneratedAt)}</strong></div>
+				<div class="status-kpi">
+					<span>Rows assessed</span><strong>{Number(driftMetrics.total_rows ?? 0).toLocaleString()}</strong>
+				</div>
 				<div class="status-kpi">
 					<span>Δ high confidence</span><strong>{signed(Number(driftDeltas.high_confidence ?? 0))}</strong>
 				</div>

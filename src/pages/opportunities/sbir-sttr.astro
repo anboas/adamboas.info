@@ -1,6 +1,7 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import { withBase } from '../../utils/withBase';
+import { absoluteUrl } from '../../config/site';
 
 const target = withBase('/opportunities/?source=sbir');
 ---
@@ -8,6 +9,7 @@ const target = withBase('/opportunities/?source=sbir');
 <SiteLayout
 	title="Opportunities | Adam Boas"
 	description="Redirecting to the unified Opportunities interface (SBIR/STTR source selected)."
+	canonicalHref={absoluteUrl('/opportunities/')}
 	noindex={true}
 >
 	<meta http-equiv="refresh" content={`0;url=${target}`} />

@@ -4,6 +4,7 @@ import SurfaceHeader from '../components/SurfaceHeader.astro';
 // sticky browse intentionally omitted on /changes (Changes link is footer-only)
 import changeNotesJs from '../scripts/change-notes.js?raw';
 import { absoluteUrl } from '../config/site';
+import { SITE_BUILD_LABEL, SITE_BUILD_TIME } from '../utils/buildMetadata';
 
 type ChangeGroup = {
 	kind: 'Added' | 'Changed' | 'Improved' | 'Fixed';
@@ -4964,6 +4965,16 @@ const releases: Release[] = [
 ];
 
 const current = releases.find((r) => r.current) ?? releases[0];
+const buildTimeLabel = new Intl.DateTimeFormat('en-US', {
+	year: 'numeric',
+	month: 'short',
+	day: '2-digit',
+	hour: '2-digit',
+	minute: '2-digit',
+	hour12: false,
+	timeZone: 'America/New_York',
+	timeZoneName: 'short',
+}).format(new Date(SITE_BUILD_TIME));
 
 const topicGroups: TopicGroup[] = [
 	{ key: 'writing', label: 'Writing' },
@@ -5022,11 +5033,12 @@ function releaseSearchText(release: Release) {
 		<SurfaceHeader
 			eyebrow="Release ledger"
 			title="Change Notes"
-			description="Public release tracker focused on shipped website capabilities and user-facing outcomes."
+			description="Curated release history with live build provenance for the deployed site."
 		>
 			<div slot="actions" class="flex flex-wrap gap-2 text-xs">
-				<span class="rounded-none border border-emerald-700/70 bg-emerald-900/20 px-2 py-1 text-emerald-200">Current: {current.version}</span>
-				<span class="rounded-none border border-slate-700 px-2 py-1 text-slate-300">Released {current.date}</span>
+				<span data-live-build class="rounded-none border border-emerald-700/70 bg-emerald-900/20 px-2 py-1 text-emerald-200">Build {SITE_BUILD_LABEL}</span>
+				<span data-live-build-time class="rounded-none border border-slate-700 px-2 py-1 text-slate-300">Generated <time datetime={SITE_BUILD_TIME}>{buildTimeLabel}</time></span>
+				<span class="rounded-none border border-slate-700 px-2 py-1 text-slate-400">History through {current.version} · {current.date}</span>
 			</div>
 			<div class="mt-1 flex flex-wrap items-center gap-2 text-xs text-slate-300">
 				<span class="kbd">/</span><span>search</span>
@@ -5157,11 +5169,11 @@ function releaseSearchText(release: Release) {
 		<div class="mt-4 hidden flex flex-wrap items-center justify-between gap-2 md:flex-nowrap" data-change-pagination>
 			<p class="text-xs text-slate-300" data-change-pagination-status></p>
 			<div class="flex items-center gap-2">
-				<button type="button" data-change-page-first class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950">First</button>
-				<button type="button" data-change-page-prev class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950">Prev</button>
+				<button type="button" data-change-page-first class="min-h-11 rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950 md:min-h-0">First</button>
+				<button type="button" data-change-page-prev class="min-h-11 rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950 md:min-h-0">Prev</button>
 				<span class="text-xs text-slate-300" data-change-page-label>Page 1 of 1</span>
-				<button type="button" data-change-page-next class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950">Next</button>
-				<button type="button" data-change-page-last class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950">Last</button>
+				<button type="button" data-change-page-next class="min-h-11 rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950 md:min-h-0">Next</button>
+				<button type="button" data-change-page-last class="min-h-11 rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950 md:min-h-0">Last</button>
 			</div>
 		</div>
 
