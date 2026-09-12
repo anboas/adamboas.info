@@ -4322,8 +4322,13 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 			font-size: 1.12rem;
 		}
 		.radar-input,
-		.radar-btn {
-			min-height: 38px;
+		.radar-btn,
+		.radar-topic-btn,
+		.radar-check,
+		.radar-pin-btn,
+		.radar-calendar-group,
+		.radar-calendar-chip {
+			min-height: 44px;
 		}
 		.radar-card-actions {
 			gap: 0.28rem;
@@ -4341,7 +4346,6 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 			width: 100%;
 		}
 		.radar-pin-btn {
-			min-height: 1.8rem;
 			padding: 0 0.5rem;
 			font-size: 0.64rem;
 		}
@@ -4349,10 +4353,6 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 			min-height: 1.8rem;
 			padding: 0 0.5rem;
 			font-size: 0.64rem;
-		}
-		.radar-calendar-group,
-		.radar-calendar-chip {
-			min-height: 1.8rem;
 		}
 		.radar-btn-tight {
 			font-size: 0.7rem;
@@ -4394,7 +4394,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		}
 		.radar-details summary,
 		.radar-summary {
-			min-height: 34px;
+			min-height: 44px;
 			display: flex;
 			align-items: center;
 		}

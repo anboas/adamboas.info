@@ -10,6 +10,7 @@ const paths = [
 	'/writing/acp-ra/',
 	'/capabilities/defense-technology-strategy/',
 	'/events/',
+	'/opportunities/',
 	'/changes/',
 	'/experience/',
 	'/education/',

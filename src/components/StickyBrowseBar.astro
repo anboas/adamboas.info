@@ -19,8 +19,8 @@ const toolsActive = active === 'events' || active === 'opportunities';
 
 function cls(key) {
 	return key === active
-		? 'inline-flex h-8 items-center justify-center rounded-none border px-2 text-[11px] font-semibold text-slate-50 sm:px-3 sm:text-sm sticky-tab-active'
-		: 'inline-flex h-8 items-center justify-center rounded-none border border-slate-800 bg-slate-950 px-2 text-[11px] text-slate-200 hover:bg-slate-900 sm:px-3 sm:text-sm';
+		? 'inline-flex h-11 items-center justify-center rounded-none border px-2 text-[11px] font-semibold text-slate-50 sm:px-3 sm:text-sm sticky-tab-active'
+		: 'inline-flex h-11 items-center justify-center rounded-none border border-slate-800 bg-slate-950 px-2 text-[11px] text-slate-200 hover:bg-slate-900 sm:px-3 sm:text-sm';
 }
 
 function ariaCurrent(key) {
@@ -35,7 +35,7 @@ function ariaCurrent(key) {
 			<details class="group relative">
 				<summary
 					class:list={[
-						'inline-flex h-8 cursor-pointer list-none items-center justify-center rounded-none border px-2 text-[11px] sm:px-3 sm:text-sm',
+						'inline-flex h-11 cursor-pointer list-none items-center justify-center rounded-none border px-2 text-[11px] sm:px-3 sm:text-sm',
 						toolsActive
 							? 'sticky-tab-active font-semibold text-slate-50'
 							: 'border-slate-800 bg-slate-950 text-slate-200 hover:bg-slate-900',
@@ -45,23 +45,23 @@ function ariaCurrent(key) {
 				</summary>
 				<div class="absolute right-0 z-40 mt-1 w-56 border border-slate-700 bg-slate-950/98 p-1 shadow-xl">
 					<a
-						class="block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900"
+						class="flex min-h-11 items-center rounded-none px-3 text-sm text-slate-200 hover:bg-slate-900"
 						href="https://policy-intelligence-full.pages.dev/"
 						target="_blank"
 						rel="noopener noreferrer">Policy Intelligence</a
 					>
 					<a
-						class="mt-0.5 block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900"
+						class="mt-0.5 flex min-h-11 items-center rounded-none px-3 text-sm text-slate-200 hover:bg-slate-900"
 						href="https://opportunity-intelligence-full.pages.dev/"
 						target="_blank"
 						rel="noopener noreferrer">Opportunity Intelligence</a
 					>
 					<a
-						class="mt-0.5 block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900"
+						class="mt-0.5 flex min-h-11 items-center rounded-none px-3 text-sm text-slate-200 hover:bg-slate-900"
 						href={withBase('/opportunities/')}>Opportunities</a
 					>
 					<a
-						class="mt-0.5 block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900"
+						class="mt-0.5 flex min-h-11 items-center rounded-none px-3 text-sm text-slate-200 hover:bg-slate-900"
 						href={withBase('/events/')}>Events</a
 					>
 				</div>

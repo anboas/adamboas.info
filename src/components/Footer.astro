@@ -1,7 +1,7 @@
 ---
-import { SITE_RELEASE_VERSION } from '../consts';
+import { SITE_BUILD_LABEL, SITE_BUILD_TIME } from '../utils/buildMetadata';
 
-const now = new Date();
+const now = new Date(SITE_BUILD_TIME);
 const lastUpdatedLabel = new Intl.DateTimeFormat('en-US', {
 	weekday: 'short',
 	year: 'numeric',
@@ -20,7 +20,9 @@ const lastUpdatedLabel = new Intl.DateTimeFormat('en-US', {
 		<div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
 			<div class="space-y-1">
 				<p>© {now.getFullYear()} Adam Boas</p>
-				<p class="text-xs text-slate-500">Version {SITE_RELEASE_VERSION} · Last updated {lastUpdatedLabel}</p>
+				<p class="text-xs text-slate-500">
+					Build {SITE_BUILD_LABEL} · Generated <time datetime={SITE_BUILD_TIME}>{lastUpdatedLabel}</time>
+				</p>
 			</div>
 			<ul class="flex flex-wrap items-center gap-x-2 gap-y-2">
 				<li>

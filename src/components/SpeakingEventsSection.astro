@@ -435,6 +435,13 @@ const speakingYears = Array.from(
 		border-color: rgba(45, 212, 191, 0.65);
 		background: rgba(13, 148, 136, 0.14);
 	}
+	@media (max-width: 767px) {
+		.speaking-control-input,
+		.speaking-tag-btn,
+		[data-speaking-clear] {
+			min-height: 44px;
+		}
+	}
 	.speaking-modal {
 		position: fixed;
 		inset: 0;

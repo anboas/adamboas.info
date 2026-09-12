@@ -218,6 +218,10 @@ a {
   }
   .footer-link {
     font-size: 0.78rem;
+    min-height: 44px;
+  }
+  .ui-link-btn {
+    min-height: 44px;
   }
 }
 
@@ -1172,6 +1176,15 @@ a[data-writing-card][data-type="note"]::before { background: rgba(0, 196, 196, 0
 
   .changes-mini-inner {
     gap: 0.3rem;
+  }
+
+  .changes-filter-bar :is(input, summary, [data-change-clear], .change-group-pill, .change-tag-pill) {
+    min-height: 44px;
+  }
+
+  .changes-filter-bar summary {
+    display: flex;
+    align-items: center;
   }
 }
 
