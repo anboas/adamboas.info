@@ -36,6 +36,9 @@ test.describe('writing controls regression', () => {
 	test('exposes only the current writing controls', async ({ page }) => {
 		await page.goto(`${BASE}/writing/`, { waitUntil: 'networkidle' });
 
+		await expect(page.getByRole('heading', { name: 'Featured', exact: true })).toHaveCount(0);
+		await expect(page.getByText('Start here.', { exact: true })).toHaveCount(0);
+
 		await expect(page.locator('[data-writing-set-all]')).toHaveAttribute('data-tooltip', /\S+/);
 		for (const type of ['paper', 'note', 'memo']) {
 			await expect(page.locator(`[data-writing-type-toggle="${type}"]`)).toHaveAttribute('data-tooltip', /\S+/);

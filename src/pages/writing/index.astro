@@ -5,7 +5,6 @@ import SurfacePageHeader from '../../components/SurfacePageHeader.astro';
 import { withBase } from '../../utils/withBase';
 import FilterShell from '../../components/ui/FilterShell.astro';
 import SearchControl from '../../components/ui/SearchControl.astro';
-import WritingCompactCard from '../../components/WritingCompactCard.astro';
 import writingIndexJs from '../../scripts/writing-index.js?raw';
 
 const writing = (await getCollection('writing'))
@@ -42,17 +41,6 @@ const items = [
 	.filter((x) => !!x.slug)
 	.sort((a, b) => (b.date?.valueOf?.() ?? 0) - (a.date?.valueOf?.() ?? 0));
 
-const featuredOrder = [
-	'2026-07-31-digital-engineering-not-a-department',
-	'2026-07-30-missing-operating-system-defense-growth',
-	'2026-07-30-technology-insertion-management-system',
-];
-const featuredFromOrder = featuredOrder.map((slug) => items.find((w) => w.slug === slug)).filter(Boolean);
-const featuredFill = items
-	.filter((w) => !featuredOrder.includes(String(w.slug)))
-	.slice(0, Math.max(0, 3 - featuredFromOrder.length));
-const featuredWriting = [...featuredFromOrder, ...featuredFill].slice(0, 3);
-
 const fmtDate = (date: Date | undefined) =>
 	date ? date.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' }) : '';
 ---
@@ -85,16 +73,6 @@ const fmtDate = (date: Date | undefined) =>
 				<li>Use <code>?view=agent</code> on detail pages for lower-noise parsing.</li>
 				<li>Prefer publication timestamps from manifest over DOM ordering.</li>
 			</ul>
-		</section>
-
-		<section class="mt-4 card p-4 md:mt-5 md:p-5">
-			<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
-				<h2 class="section-title">Featured</h2>
-				<p class="text-xs text-slate-400">Start here.</p>
-			</div>
-			<div class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-				{featuredWriting.map((w) => <WritingCompactCard item={w} showTopicCount={false} />)}
-			</div>
 		</section>
 
 		<FilterShell class="writing-index-controls mt-4 p-2.5 md:mt-5 md:p-3">
