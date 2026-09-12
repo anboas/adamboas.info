@@ -71,6 +71,44 @@ test.describe('writing controls regression', () => {
 		expect(scrollMetrics.documentHeight).toBeGreaterThanOrEqual(scrollMetrics.bodyHeight);
 	});
 
+	test('mobile card descriptions use the full content width below metadata', async ({ page }) => {
+		await page.setViewportSize({ width: 390, height: 844 });
+
+		for (const surface of [
+			{ path: '/writing/', card: '[data-writing-card]:visible', description: '[data-writing-card-description]' },
+			{ path: '/', card: '[data-writing-compact-card]', description: '[data-writing-card-description]' },
+		]) {
+			await page.goto(`${BASE}${surface.path}`, { waitUntil: 'networkidle' });
+			const card = page.locator(surface.card).first();
+			const description = card.locator(surface.description);
+			await expect(description).toBeVisible();
+
+			const geometry = await card.evaluate((element, descriptionSelector) => {
+				const descriptionElement = element.querySelector(descriptionSelector);
+				if (!(descriptionElement instanceof HTMLElement)) return null;
+
+				const cardRect = element.getBoundingClientRect();
+				const descriptionRect = descriptionElement.getBoundingClientRect();
+				const cardStyle = getComputedStyle(element);
+				const descriptionStyle = getComputedStyle(descriptionElement);
+				return {
+					availableWidth:
+						cardRect.width -
+						Number.parseFloat(cardStyle.borderLeftWidth) -
+						Number.parseFloat(cardStyle.borderRightWidth) -
+						Number.parseFloat(cardStyle.paddingLeft) -
+						Number.parseFloat(cardStyle.paddingRight),
+					descriptionWidth: descriptionRect.width,
+					lineClamp: descriptionStyle.getPropertyValue('-webkit-line-clamp'),
+				};
+			}, surface.description);
+
+			expect(geometry).not.toBeNull();
+			expect(geometry!.descriptionWidth).toBeGreaterThanOrEqual(geometry!.availableWidth - 1);
+			expect(geometry!.lineClamp).toBe('3');
+		}
+	});
+
 	test('type filters sync to the URL and never allow an empty selection', async ({ page }) => {
 		await page.goto(`${BASE}/writing/`, { waitUntil: 'networkidle' });
 

@@ -19,7 +19,7 @@ const dateLabel = item.date
 	: null;
 ---
 
-<a class="card block overflow-hidden p-4 hover:border-slate-700" href={href}>
+<a data-writing-compact-card class="card block overflow-hidden p-4 hover:border-slate-700" href={href}>
 	<div class="flex items-start justify-between gap-3">
 		<div class="min-w-0">
 			<div class="flex min-w-0 items-baseline gap-2">
@@ -41,15 +41,21 @@ const dateLabel = item.date
 					) : null
 				}
 			</div>
-			{item.description ? <p class="clamp-2 mt-1.5 break-words text-sm text-slate-300">{item.description}</p> : null}
-			{
-				showTopicCount && tagCount > 0 ? (
-					<p class="mt-1 text-[11px] text-slate-500">
-						{tagCount} topic{tagCount === 1 ? '' : 's'}
-					</p>
-				) : null
-			}
 		</div>
 		{dateLabel ? <span class="shrink-0 text-[11px] text-slate-500">{dateLabel}</span> : null}
 	</div>
+	{
+		item.description ? (
+			<p data-writing-card-description class="clamp-3 mt-1.5 break-words text-sm text-slate-300">
+				{item.description}
+			</p>
+		) : null
+	}
+	{
+		showTopicCount && tagCount > 0 ? (
+			<p class="mt-1 text-[11px] text-slate-500">
+				{tagCount} topic{tagCount === 1 ? '' : 's'}
+			</p>
+		) : null
+	}
 </a>
