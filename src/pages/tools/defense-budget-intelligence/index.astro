@@ -4,7 +4,7 @@ import { absoluteUrl, contactMailto } from '../../../config/site';
 
 const pageTitle = 'Defense Budget Intelligence | Acquisition timelines and spend evidence';
 const pageDescription =
-	'A decision workspace for defense growth, capture, acquisition, and portfolio teams to see contract timing, procurement changes, spend evidence, and follow-on signals in one place.';
+	'A decision workspace for defense growth, capture, acquisition, and portfolio teams to see contract timing, team schedules, procurement changes, spending evidence, and verified intelligence in one place.';
 const pageUrl = absoluteUrl('/tools/defense-budget-intelligence/');
 const productUrl = 'https://defense-budget-intelligence.pages.dev/';
 
@@ -54,11 +54,21 @@ const capabilities = [
 	},
 	{
 		number: '05',
+		title: 'Team calendar',
+		copy: 'Assign events to teams, layer workspace schedules, carry attendee context, and keep registration and review milestones visible.',
+	},
+	{
+		number: '06',
+		title: 'Kiosk and wallboard',
+		copy: 'Project the shared calendar or tracked records as a fullscreen, distance-readable operating picture for conference rooms.',
+	},
+	{
+		number: '07',
 		title: 'Shared operating context',
 		copy: 'Track records, assign events, save views, and preserve a workspace history across analysts, teams, and authorized agents.',
 	},
 	{
-		number: '06',
+		number: '08',
 		title: 'Decision-ready exports',
 		copy: 'Export filtered evidence with the view URL, snapshot time, method, stable record identity, and source lineage attached.',
 	},
@@ -68,7 +78,10 @@ const workflow = [
 	{ step: 'Scan', copy: 'Start with what is ending, active, changed, or upcoming.' },
 	{ step: 'Focus', copy: 'Filter by organization, buyer, work category, status, or evidence layer.' },
 	{ step: 'Verify', copy: 'Open the record and inspect dates, actions, money, provenance, and coverage.' },
-	{ step: 'Act', copy: 'Track the work, align the team, and carry source-linked context into the next decision.' },
+	{
+		step: 'Act',
+		copy: 'Track the work, align the team calendar, and carry source-linked context into the next decision.',
+	},
 ];
 ---
 
@@ -86,8 +99,8 @@ const workflow = [
 				<p class="dbi-eyebrow"><span aria-hidden="true"></span> Defense Budget Intelligence</p>
 				<h1 id="dbi-title">See the contract timeline before it becomes the deadline.</h1>
 				<p class="dbi-lede">
-					A source-grounded decision workspace that puts contract timing, procurement changes, spend evidence, and
-					follow-on signals on one operating surface.
+					A source-grounded decision workspace that puts contract timing, team schedules, procurement changes, spending
+					evidence, and follow-on signals on one operating surface.
 				</p>
 				<div class="dbi-actions">
 					<a class="dbi-button dbi-button--primary" href={productUrl} target="_blank" rel="noopener noreferrer">
@@ -105,6 +118,7 @@ const workflow = [
 					<div><dt>Primary surface</dt><dd>Decision Gantt</dd></div>
 					<div><dt>Evidence spine</dt><dd>Budget → award → action</dd></div>
 					<div><dt>Default posture</dt><dd>Current-window triage</dd></div>
+					<div><dt>Team operation</dt><dd>Calendar + kiosk</dd></div>
 					<div><dt>Built for</dt><dd>Teams, not dashboards</dd></div>
 				</dl>
 			</aside>
@@ -166,6 +180,65 @@ const workflow = [
 				<span>04</span>
 				<strong>What proves it?</strong>
 				<p>Carry provenance and coverage into every review.</p>
+			</div>
+		</section>
+
+		<section class="dbi-team-operations" aria-labelledby="team-operations-title">
+			<div class="dbi-section-heading dbi-section-heading--split">
+				<div>
+					<p class="dbi-kicker">Shared operating rhythm</p>
+					<h2 id="team-operations-title">Team calendar and kiosk mode turn intelligence into tempo.</h2>
+				</div>
+				<p>
+					The Gantt explains the contract landscape. The Schedule turns it into coordinated work, then the wallboard
+					projects the same trusted dates for a team or conference room.
+				</p>
+			</div>
+
+			<div class="dbi-team-grid">
+				<article class="dbi-team-card">
+					<div class="dbi-team-card__copy">
+						<p>Team calendar</p>
+						<h3>One schedule, filtered to the people doing the work.</h3>
+						<span>
+							Create events once, assign team overlays and attendees, link contract records, and carry typed milestones
+							for registration, submissions, travel, reviews, and other deadlines.
+						</span>
+					</div>
+					<figure>
+						<img
+							src="/images/tools/defense-budget-intelligence-team-calendar.webp"
+							alt="Defense Budget Intelligence team calendar with workspace and team schedule overlays"
+							width="1440"
+							height="1237"
+							loading="lazy"
+							decoding="async"
+						/>
+						<figcaption>Workspace-wide and team-specific calendar overlays</figcaption>
+					</figure>
+				</article>
+
+				<article class="dbi-team-card">
+					<div class="dbi-team-card__copy">
+						<p>Kiosk mode</p>
+						<h3>A quiet, fullscreen operating picture for the room.</h3>
+						<span>
+							Show the calendar or tracked records at 1080p and 4K, preserve the active workspace and clock, and remove
+							configuration chrome so dates stay readable at distance.
+						</span>
+					</div>
+					<figure>
+						<img
+							src="/images/tools/defense-budget-intelligence-kiosk.webp"
+							alt="Defense Budget Intelligence calendar displayed in fullscreen kiosk mode"
+							width="1920"
+							height="1080"
+							loading="lazy"
+							decoding="async"
+						/>
+						<figcaption>Conference-room calendar with deadlines, milestones, and attendees</figcaption>
+					</figure>
+				</article>
 			</div>
 		</section>
 
@@ -235,6 +308,46 @@ const workflow = [
 			</ol>
 		</section>
 
+		<section class="dbi-next" aria-labelledby="next-phase-title" data-product-phase="next">
+			<div class="dbi-next__intro">
+				<div>
+					<p class="dbi-kicker">Next product phase</p>
+					<h2 id="next-phase-title">Agentic discovery and augmentation will keep the operating picture moving.</h2>
+				</div>
+				<div>
+					<strong>Review-first by design</strong>
+					<p>
+						The next phase expands the existing verified augmentation pattern across industry events, contract records,
+						and spending activity. New facts stay proposed until they are independently checked, source-bound, and safe
+						to merge.
+					</p>
+				</div>
+			</div>
+
+			<ol class="dbi-intelligence-loop">
+				<li>
+					<span>01</span>
+					<strong>Discover</strong>
+					<p>Continuously find relevant industry days, conferences, solicitations, awards, and spending changes.</p>
+				</li>
+				<li>
+					<span>02</span>
+					<strong>Augment</strong>
+					<p>Propose missing dates, official links, milestones, categories, money context, and record relationships.</p>
+				</li>
+				<li>
+					<span>03</span>
+					<strong>Verify</strong>
+					<p>Independently test identity, evidence, confidence, conflicts, and the safety of each additive change.</p>
+				</li>
+				<li>
+					<span>04</span>
+					<strong>Route</strong>
+					<p>Move approved intelligence into the Gantt, team calendar, wallboard, alerts, and source-linked review.</p>
+				</li>
+			</ol>
+		</section>
+
 		<section class="dbi-evidence" aria-labelledby="evidence-title">
 			<div>
 				<p class="dbi-kicker">Evidence, not theater</p>
@@ -256,7 +369,10 @@ const workflow = [
 			<div>
 				<p class="dbi-kicker">Defense Budget Intelligence</p>
 				<h2 id="cta-title">Put the next decision on a timeline.</h2>
-				<p>Open the workspace, or discuss how the operating surface fits your portfolio and capture workflow.</p>
+				<p>
+					Open the workspace, or discuss how the Timeline, team calendar, and display surface fit your portfolio and
+					capture workflow.
+				</p>
 			</div>
 			<div class="dbi-actions">
 				<a class="dbi-button dbi-button--primary" href={productUrl} target="_blank" rel="noopener noreferrer">
@@ -288,6 +404,8 @@ const workflow = [
 	.dbi-hero,
 	.dbi-proof,
 	.dbi-section,
+	.dbi-team-operations,
+	.dbi-next,
 	.dbi-evidence,
 	.dbi-cta {
 		padding-inline: max(1rem, calc((100vw - 78rem) / 2));
@@ -458,6 +576,7 @@ const workflow = [
 	}
 
 	.dbi-section-heading h2,
+	.dbi-next h2,
 	.dbi-evidence h2,
 	.dbi-cta h2 {
 		margin-top: 0.75rem;
@@ -471,6 +590,7 @@ const workflow = [
 
 	.dbi-section-heading > p,
 	.dbi-section-heading--split > p,
+	.dbi-next__intro > div:last-child > p,
 	.dbi-evidence > div > p:last-child,
 	.dbi-cta > div > p:last-child {
 		margin-top: 1rem;
@@ -583,6 +703,76 @@ const workflow = [
 		color: #64748b;
 	}
 
+	.dbi-team-operations {
+		padding-block: clamp(3.8rem, 8vw, 7rem);
+		border-bottom: 1px solid var(--dbi-line);
+		background: #050d1a;
+	}
+
+	.dbi-team-grid {
+		display: grid;
+		gap: 1rem;
+		margin-top: 2.5rem;
+	}
+
+	.dbi-team-card {
+		display: flex;
+		min-width: 0;
+		flex-direction: column;
+		border: 1px solid var(--dbi-line);
+		background: #07101f;
+	}
+
+	.dbi-team-card__copy {
+		padding: 1.5rem;
+	}
+
+	.dbi-team-card__copy > p {
+		font-size: 0.65rem;
+		font-weight: 800;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #38bdf8;
+	}
+
+	.dbi-team-card h3 {
+		margin-top: 0.75rem;
+		font-size: 1.25rem;
+		line-height: 1.25;
+		font-weight: 750;
+		color: #f8fafc;
+	}
+
+	.dbi-team-card__copy > span {
+		display: block;
+		margin-top: 0.75rem;
+		font-size: 0.88rem;
+		line-height: 1.65;
+		color: #94a3b8;
+	}
+
+	.dbi-team-card figure {
+		margin: auto 0 0;
+		border-top: 1px solid var(--dbi-line);
+		background: #eaf1f8;
+	}
+
+	.dbi-team-card figure img {
+		display: block;
+		width: 100%;
+		aspect-ratio: 16 / 10;
+		object-fit: cover;
+		object-position: top left;
+	}
+
+	.dbi-team-card figcaption {
+		border-top: 1px solid #334155;
+		background: #071222;
+		padding: 0.7rem 0.85rem;
+		font-size: 0.68rem;
+		color: #94a3b8;
+	}
+
 	.dbi-audience-grid,
 	.dbi-capability-grid {
 		display: grid;
@@ -670,6 +860,70 @@ const workflow = [
 		color: #94a3b8;
 	}
 
+	.dbi-next {
+		padding-block: clamp(3.8rem, 8vw, 7rem);
+		border-block: 1px solid rgba(45, 212, 191, 0.42);
+		background: #071c24;
+	}
+
+	.dbi-next__intro {
+		display: grid;
+		gap: 2rem;
+		align-items: end;
+	}
+
+	.dbi-next__intro > div:last-child {
+		border-left: 3px solid #2dd4bf;
+		padding-left: 1rem;
+	}
+
+	.dbi-next__intro > div:last-child > strong {
+		font-size: 0.72rem;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #99f6e4;
+	}
+
+	.dbi-next__intro > div:last-child > p {
+		margin-top: 0.65rem;
+	}
+
+	.dbi-intelligence-loop {
+		display: grid;
+		gap: 1px;
+		margin-top: 2.5rem;
+		border: 1px solid rgba(45, 212, 191, 0.28);
+		background: rgba(45, 212, 191, 0.28);
+		list-style: none;
+		padding: 0;
+	}
+
+	.dbi-intelligence-loop li {
+		background: #082029;
+		padding: 1.35rem;
+	}
+
+	.dbi-intelligence-loop li > span {
+		font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+		font-size: 0.68rem;
+		font-weight: 800;
+		color: #2dd4bf;
+	}
+
+	.dbi-intelligence-loop strong {
+		display: block;
+		margin-top: 1.4rem;
+		font-size: 1rem;
+		color: #f0fdfa;
+	}
+
+	.dbi-intelligence-loop p {
+		margin-top: 0.45rem;
+		font-size: 0.82rem;
+		line-height: 1.6;
+		color: #99b8bd;
+	}
+
 	.dbi-evidence {
 		display: grid;
 		gap: 2.5rem;
@@ -720,6 +974,7 @@ const workflow = [
 	@media (min-width: 640px) {
 		.dbi-audience-grid,
 		.dbi-capability-grid,
+		.dbi-intelligence-loop,
 		.dbi-question-band {
 			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
@@ -744,6 +999,7 @@ const workflow = [
 		}
 
 		.dbi-section-heading--split,
+		.dbi-next__intro,
 		.dbi-evidence,
 		.dbi-cta {
 			grid-template-columns: minmax(0, 1.25fr) minmax(20rem, 0.75fr);
@@ -768,7 +1024,15 @@ const workflow = [
 		}
 
 		.dbi-capability-grid {
-			grid-template-columns: repeat(3, minmax(0, 1fr));
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+		}
+
+		.dbi-team-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		.dbi-intelligence-loop {
+			grid-template-columns: repeat(4, minmax(0, 1fr));
 		}
 
 		.dbi-workflow {
