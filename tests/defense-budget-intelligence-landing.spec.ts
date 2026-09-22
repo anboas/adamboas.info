@@ -43,6 +43,9 @@ test.describe('Defense Budget Intelligence landing page', () => {
 			await expect(page.locator('h1')).toHaveText('See the contract timeline before it becomes the deadline.');
 			await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex,nofollow');
 			await expect(page.locator('meta[name="googlebot"]')).toHaveAttribute('content', 'noindex,nofollow');
+			await expect(page.getByRole('heading', { name: /Team calendar and kiosk mode/i })).toBeVisible();
+			await expect(page.getByRole('heading', { name: /Agentic discovery and augmentation/i })).toBeVisible();
+			await expect(page.locator('[data-product-phase="next"]')).toContainText('Review-first by design');
 			const accessibility = await new AxeBuilder({ page }).analyze();
 			expect(
 				accessibility.violations.filter((violation) => violation.impact === 'critical'),
@@ -53,11 +56,18 @@ test.describe('Defense Budget Intelligence landing page', () => {
 			await expect(primaryCta).toHaveAttribute('href', PRODUCT_URL);
 			await expect(primaryCta).toHaveAttribute('target', '_blank');
 
-			const productImage = page.getByAltText(/Timeline showing contracts and acquisition activity/i);
-			await expect(productImage).toBeVisible();
-			expect(await productImage.evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0)).toBe(
-				true,
-			);
+			const productImages = [
+				page.getByAltText(/Timeline showing contracts and acquisition activity/i),
+				page.getByAltText(/team calendar with workspace and team schedule overlays/i),
+				page.getByAltText(/calendar displayed in fullscreen kiosk mode/i),
+			];
+			for (const productImage of productImages) {
+				await productImage.scrollIntoViewIfNeeded();
+				await expect(productImage).toBeVisible();
+				await expect
+					.poll(() => productImage.evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0))
+					.toBe(true);
+			}
 
 			const geometry = await page.evaluate(() => ({
 				documentWidth: document.documentElement.scrollWidth,
