@@ -85,6 +85,7 @@ const mustNoindex = [
 	'src/pages/experience/[slug].astro',
 	'src/pages/education/index.astro',
 	'src/pages/education/[slug].astro',
+	'src/pages/tools/defense-budget-intelligence/index.astro',
 ];
 
 for (const file of mustNoindex) {
@@ -122,6 +123,20 @@ for (const [file, imagePath] of Object.entries(coreSharePages)) {
 	assert(src.includes(`image="${imagePath}"`), `Expected explicit OG image on ${file}: ${imagePath}`);
 	assert(exists(`public${imagePath}`), `Missing OG image asset ${imagePath} required by ${file}`);
 }
+
+const quietToolPage = read('src/pages/tools/defense-budget-intelligence/index.astro');
+assert(
+	quietToolPage.includes('image="/og/tools/defense-budget-intelligence.png"'),
+	'Defense Budget Intelligence landing page must use its product OG image.',
+);
+assert(
+	exists('public/og/tools/defense-budget-intelligence.png'),
+	'Missing Defense Budget Intelligence landing-page OG image.',
+);
+assert(
+	read('astro.config.mjs').includes("'/tools/defense-budget-intelligence/'"),
+	'Quiet-launch tool page must remain excluded from the XML sitemap.',
+);
 
 const capabilityDetailSrc = read('src/pages/capabilities/[slug].astro');
 assert(
