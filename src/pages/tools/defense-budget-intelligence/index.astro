@@ -1,0 +1,816 @@
+---
+import SiteLayout from '../../../layouts/SiteLayout.astro';
+import { absoluteUrl, contactMailto } from '../../../config/site';
+
+const pageTitle = 'Defense Budget Intelligence | Acquisition timelines and spend evidence';
+const pageDescription =
+	'A decision workspace for defense growth, capture, acquisition, and portfolio teams to see contract timing, procurement changes, spend evidence, and follow-on signals in one place.';
+const pageUrl = absoluteUrl('/tools/defense-budget-intelligence/');
+const productUrl = 'https://defense-budget-intelligence.pages.dev/';
+
+const audiences = [
+	{
+		title: 'Growth and capture teams',
+		copy: 'See expiring work, active solicitations, changed records, and follow-on signals before the pursuit calendar becomes urgent.',
+		cue: 'Shape the pipeline',
+	},
+	{
+		title: 'Acquisition analysts',
+		copy: 'Trace reported terms, milestones, modifications, obligations, and source evidence without rebuilding the record by hand.',
+		cue: 'Verify the record',
+	},
+	{
+		title: 'Portfolio leaders',
+		copy: 'Scan a time-bounded operating picture across organizations, work categories, funding offices, and vendors.',
+		cue: 'See the portfolio',
+	},
+	{
+		title: 'Program and strategy teams',
+		copy: 'Connect budget requests, account execution, awards, and acquisition activity while keeping source boundaries explicit.',
+		cue: 'Follow the money',
+	},
+];
+
+const capabilities = [
+	{
+		number: '01',
+		title: 'A now-first Gantt',
+		copy: 'Start in the current decision window, then move between three-year, seven-year, and all-time views without losing context.',
+	},
+	{
+		number: '02',
+		title: 'Change intelligence',
+		copy: 'Surface new and updated procurement records, field-level changes, active solicitations, and time-sensitive schedule movement.',
+	},
+	{
+		number: '03',
+		title: 'Evidence overlays',
+		copy: 'Layer reported schedules, solicitation windows, exact FPDS actions, follow-ons, funding, and bounded subaward evidence.',
+	},
+	{
+		number: '04',
+		title: 'Money lineage',
+		copy: 'Move from budget request through account execution, awards, modifications, and source-linked public records.',
+	},
+	{
+		number: '05',
+		title: 'Shared operating context',
+		copy: 'Track records, assign events, save views, and preserve a workspace history across analysts, teams, and authorized agents.',
+	},
+	{
+		number: '06',
+		title: 'Decision-ready exports',
+		copy: 'Export filtered evidence with the view URL, snapshot time, method, stable record identity, and source lineage attached.',
+	},
+];
+
+const workflow = [
+	{ step: 'Scan', copy: 'Start with what is ending, active, changed, or upcoming.' },
+	{ step: 'Focus', copy: 'Filter by organization, buyer, work category, status, or evidence layer.' },
+	{ step: 'Verify', copy: 'Open the record and inspect dates, actions, money, provenance, and coverage.' },
+	{ step: 'Act', copy: 'Track the work, align the team, and carry source-linked context into the next decision.' },
+];
+---
+
+<SiteLayout
+	title={pageTitle}
+	description={pageDescription}
+	canonicalHref={pageUrl}
+	image="/og/tools/defense-budget-intelligence.png"
+	noindex={true}
+	nofollow={true}
+>
+	<div class="dbi-landing">
+		<section class="dbi-hero" aria-labelledby="dbi-title">
+			<div class="dbi-hero__copy">
+				<p class="dbi-eyebrow"><span aria-hidden="true"></span> Defense Budget Intelligence</p>
+				<h1 id="dbi-title">See the contract timeline before it becomes the deadline.</h1>
+				<p class="dbi-lede">
+					A source-grounded decision workspace that puts contract timing, procurement changes, spend evidence, and
+					follow-on signals on one operating surface.
+				</p>
+				<div class="dbi-actions">
+					<a class="dbi-button dbi-button--primary" href={productUrl} target="_blank" rel="noopener noreferrer">
+						Open Defense Budget Intelligence <span aria-hidden="true">↗</span>
+					</a>
+					<a class="dbi-button" href="#how-it-works">See how it works</a>
+				</div>
+				<p class="dbi-access-note">Authenticated workspace · Public-source evidence · Role-based access</p>
+			</div>
+
+			<aside class="dbi-hero__brief" aria-label="Product summary">
+				<p class="dbi-brief__label">The operating question</p>
+				<p class="dbi-brief__question">What requires attention now, and what evidence supports the call?</p>
+				<dl>
+					<div><dt>Primary surface</dt><dd>Decision Gantt</dd></div>
+					<div><dt>Evidence spine</dt><dd>Budget → award → action</dd></div>
+					<div><dt>Default posture</dt><dd>Current-window triage</dd></div>
+					<div><dt>Built for</dt><dd>Teams, not dashboards</dd></div>
+				</dl>
+			</aside>
+		</section>
+
+		<section class="dbi-proof" aria-labelledby="product-view-title">
+			<div class="dbi-section-heading dbi-section-heading--split">
+				<div>
+					<p class="dbi-kicker">The decision surface</p>
+					<h2 id="product-view-title">An acquisition portfolio, organized in time.</h2>
+				</div>
+				<p>
+					The Timeline leads with urgency, keeps the date scale pinned during deep review, and lets evidence appear as
+					layers instead of competing dashboards.
+				</p>
+			</div>
+
+			<figure class="dbi-product-frame">
+				<div class="dbi-product-frame__bar" aria-hidden="true">
+					<span></span><span></span><span></span>
+					<strong>Spend Explorer / Timeline</strong>
+					<small>Current decision window</small>
+				</div>
+				<div class="dbi-product-frame__viewport">
+					<img
+						src="/images/tools/defense-budget-intelligence-timeline.webp"
+						alt="Defense Budget Intelligence Timeline showing contracts and acquisition activity across a multi-year Gantt"
+						width="1440"
+						height="1000"
+						loading="eager"
+						decoding="async"
+					/>
+				</div>
+				<figcaption>
+					<span>Decision view</span>
+					<span>Current · 3 year · 7 year · all</span>
+					<span>Schedule · changes · follow-ons · funding · subawards</span>
+				</figcaption>
+			</figure>
+		</section>
+
+		<section class="dbi-question-band" aria-label="Questions answered">
+			<div>
+				<span>01</span>
+				<strong>What is ending soon?</strong>
+				<p>Find the records moving into a decision window.</p>
+			</div>
+			<div>
+				<span>02</span>
+				<strong>What changed?</strong>
+				<p>Separate current movement from background noise.</p>
+			</div>
+			<div>
+				<span>03</span>
+				<strong>What follows?</strong>
+				<p>See solicitation, option, and follow-on context together.</p>
+			</div>
+			<div>
+				<span>04</span>
+				<strong>What proves it?</strong>
+				<p>Carry provenance and coverage into every review.</p>
+			</div>
+		</section>
+
+		<section class="dbi-section" aria-labelledby="audience-title">
+			<div class="dbi-section-heading">
+				<p class="dbi-kicker">Who it is for</p>
+				<h2 id="audience-title">Built for the people who turn public data into an operating decision.</h2>
+				<p>
+					One shared surface gives every role the same dates and evidence while preserving the distinctions between
+					published facts, classifications, and analyst action.
+				</p>
+			</div>
+			<div class="dbi-audience-grid">
+				{
+					audiences.map((audience) => (
+						<article>
+							<p>{audience.cue}</p>
+							<h3>{audience.title}</h3>
+							<span>{audience.copy}</span>
+						</article>
+					))
+				}
+			</div>
+		</section>
+
+		<section id="how-it-works" class="dbi-section dbi-section--ruled" aria-labelledby="capabilities-title">
+			<div class="dbi-section-heading dbi-section-heading--split">
+				<div>
+					<p class="dbi-kicker">What it does</p>
+					<h2 id="capabilities-title">From signal to source without changing systems.</h2>
+				</div>
+				<p>
+					The product compresses discovery, timing, money, and provenance into one review path while leaving the
+					underlying evidence inspectable.
+				</p>
+			</div>
+			<div class="dbi-capability-grid">
+				{
+					capabilities.map((capability) => (
+						<article>
+							<span>{capability.number}</span>
+							<h3>{capability.title}</h3>
+							<p>{capability.copy}</p>
+						</article>
+					))
+				}
+			</div>
+		</section>
+
+		<section class="dbi-section" aria-labelledby="workflow-title">
+			<div class="dbi-section-heading">
+				<p class="dbi-kicker">The working loop</p>
+				<h2 id="workflow-title">A faster path from “what changed?” to “what do we do next?”</h2>
+			</div>
+			<ol class="dbi-workflow">
+				{
+					workflow.map((item, index) => (
+						<li>
+							<span>{String(index + 1).padStart(2, '0')}</span>
+							<div>
+								<strong>{item.step}</strong>
+								<p>{item.copy}</p>
+							</div>
+						</li>
+					))
+				}
+			</ol>
+		</section>
+
+		<section class="dbi-evidence" aria-labelledby="evidence-title">
+			<div>
+				<p class="dbi-kicker">Evidence, not theater</p>
+				<h2 id="evidence-title">Clear source boundaries are part of the product.</h2>
+				<p>
+					Defense Budget Intelligence distinguishes reported terms, exact joins, curated relationships, classifications,
+					and known coverage gaps. That makes the workspace useful in a real review, not just impressive in a demo.
+				</p>
+			</div>
+			<ul>
+				<li><span aria-hidden="true">✓</span> Official budget, USAspending, FPDS, and procurement evidence</li>
+				<li><span aria-hidden="true">✓</span> Source-linked record details and exports</li>
+				<li><span aria-hidden="true">✓</span> Explicit freshness, method, and coverage states</li>
+				<li><span aria-hidden="true">✓</span> Isolated workspaces and role-based access</li>
+			</ul>
+		</section>
+
+		<section class="dbi-cta" aria-labelledby="cta-title">
+			<div>
+				<p class="dbi-kicker">Defense Budget Intelligence</p>
+				<h2 id="cta-title">Put the next decision on a timeline.</h2>
+				<p>Open the workspace, or discuss how the operating surface fits your portfolio and capture workflow.</p>
+			</div>
+			<div class="dbi-actions">
+				<a class="dbi-button dbi-button--primary" href={productUrl} target="_blank" rel="noopener noreferrer">
+					Open the workspace <span aria-hidden="true">↗</span>
+				</a>
+				<a class="dbi-button" href={contactMailto('Defense Budget Intelligence')}>Discuss a use case</a>
+			</div>
+		</section>
+	</div>
+</SiteLayout>
+
+<style>
+	.dbi-landing {
+		--dbi-blue: #38bdf8;
+		--dbi-blue-strong: #0ea5e9;
+		--dbi-cyan: #67e8f9;
+		--dbi-ink: #020617;
+		--dbi-panel: #071222;
+		--dbi-line: rgba(100, 116, 139, 0.42);
+		--dbi-muted: #94a3b8;
+		position: relative;
+		left: 50%;
+		width: 100vw;
+		margin: -0.25rem 0 -2.5rem -50vw;
+		color: #e2e8f0;
+		overflow: clip;
+	}
+
+	.dbi-hero,
+	.dbi-proof,
+	.dbi-section,
+	.dbi-evidence,
+	.dbi-cta {
+		padding-inline: max(1rem, calc((100vw - 78rem) / 2));
+	}
+
+	.dbi-hero {
+		display: grid;
+		gap: 2.5rem;
+		align-items: end;
+		padding-block: clamp(4rem, 9vw, 8rem) clamp(3rem, 7vw, 6rem);
+		background: #030b18;
+		border-bottom: 1px solid var(--dbi-line);
+		position: relative;
+	}
+
+	.dbi-eyebrow,
+	.dbi-kicker {
+		font-size: 0.7rem;
+		font-weight: 800;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--dbi-cyan);
+	}
+
+	.dbi-eyebrow {
+		display: flex;
+		align-items: center;
+		gap: 0.65rem;
+	}
+
+	.dbi-eyebrow span {
+		width: 1.9rem;
+		height: 2px;
+		background: var(--dbi-blue);
+	}
+
+	.dbi-hero h1 {
+		max-width: 58rem;
+		margin-top: 1.25rem;
+		font-size: clamp(2.8rem, 7vw, 5.8rem);
+		line-height: 0.98;
+		letter-spacing: -0.055em;
+		font-weight: 750;
+		color: #f8fafc;
+		text-wrap: balance;
+	}
+
+	.dbi-lede {
+		max-width: 47rem;
+		margin-top: 1.75rem;
+		font-size: clamp(1.05rem, 1.7vw, 1.35rem);
+		line-height: 1.65;
+		color: #cbd5e1;
+	}
+
+	.dbi-actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		margin-top: 2rem;
+	}
+
+	.dbi-button {
+		display: inline-flex;
+		min-height: 3rem;
+		align-items: center;
+		justify-content: center;
+		gap: 0.6rem;
+		border: 1px solid #475569;
+		background: #0f172a;
+		padding: 0.75rem 1.1rem;
+		font-size: 0.9rem;
+		font-weight: 750;
+		color: #f8fafc;
+		text-decoration: none;
+		transition:
+			border-color 140ms ease,
+			background-color 140ms ease,
+			color 140ms ease;
+	}
+
+	.dbi-button:hover,
+	.dbi-button:focus-visible {
+		border-color: #7dd3fc;
+		background: #172033;
+		color: #fff;
+	}
+
+	.dbi-button--primary {
+		border-color: var(--dbi-blue);
+		background: #0369a1;
+	}
+
+	.dbi-button--primary:hover,
+	.dbi-button--primary:focus-visible {
+		background: #075985;
+	}
+
+	.dbi-access-note {
+		margin-top: 1rem;
+		font-size: 0.72rem;
+		letter-spacing: 0.04em;
+		color: #64748b;
+	}
+
+	.dbi-hero__brief {
+		border: 1px solid rgba(56, 189, 248, 0.38);
+		background: rgba(7, 18, 34, 0.94);
+		padding: 1.25rem;
+		box-shadow: inset 3px 0 0 #0284c7;
+	}
+
+	.dbi-brief__label {
+		font-size: 0.65rem;
+		font-weight: 800;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: #7dd3fc;
+	}
+
+	.dbi-brief__question {
+		margin-top: 0.75rem;
+		font-size: 1.15rem;
+		font-weight: 700;
+		line-height: 1.45;
+		color: #f8fafc;
+	}
+
+	.dbi-hero__brief dl {
+		margin-top: 1.3rem;
+		border-top: 1px solid var(--dbi-line);
+	}
+
+	.dbi-hero__brief dl div {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+		padding-block: 0.7rem;
+		border-bottom: 1px solid rgba(51, 65, 85, 0.7);
+		font-size: 0.74rem;
+	}
+
+	.dbi-hero__brief dt {
+		color: #64748b;
+	}
+
+	.dbi-hero__brief dd {
+		text-align: right;
+		font-weight: 700;
+		color: #cbd5e1;
+	}
+
+	.dbi-proof,
+	.dbi-section {
+		padding-block: clamp(3.8rem, 8vw, 7rem);
+		background: #020617;
+	}
+
+	.dbi-section-heading {
+		max-width: 51rem;
+	}
+
+	.dbi-section-heading--split {
+		display: grid;
+		gap: 1.5rem;
+		max-width: none;
+		align-items: end;
+	}
+
+	.dbi-section-heading h2,
+	.dbi-evidence h2,
+	.dbi-cta h2 {
+		margin-top: 0.75rem;
+		font-size: clamp(2rem, 4vw, 3.5rem);
+		line-height: 1.06;
+		letter-spacing: -0.035em;
+		font-weight: 750;
+		color: #f8fafc;
+		text-wrap: balance;
+	}
+
+	.dbi-section-heading > p,
+	.dbi-section-heading--split > p,
+	.dbi-evidence > div > p:last-child,
+	.dbi-cta > div > p:last-child {
+		margin-top: 1rem;
+		font-size: 1rem;
+		line-height: 1.7;
+		color: var(--dbi-muted);
+	}
+
+	.dbi-section-heading--split > p {
+		margin-top: 0;
+	}
+
+	.dbi-product-frame {
+		margin-top: 2.25rem;
+		border: 1px solid #334155;
+		background: #eaf1f8;
+		box-shadow: 0 28px 70px rgba(0, 0, 0, 0.42);
+	}
+
+	.dbi-product-frame__bar {
+		display: flex;
+		min-height: 2.75rem;
+		align-items: center;
+		gap: 0.45rem;
+		border-bottom: 1px solid #334155;
+		background: #0b1728;
+		padding-inline: 0.9rem;
+	}
+
+	.dbi-product-frame__bar > span {
+		width: 0.55rem;
+		height: 0.55rem;
+		border: 1px solid #64748b;
+		border-radius: 999px;
+	}
+
+	.dbi-product-frame__bar strong {
+		margin-left: 0.45rem;
+		font-size: 0.72rem;
+		color: #e2e8f0;
+	}
+
+	.dbi-product-frame__bar small {
+		margin-left: auto;
+		font-size: 0.66rem;
+		color: #64748b;
+	}
+
+	.dbi-product-frame__viewport {
+		overflow-x: auto;
+		overscroll-behavior-inline: contain;
+	}
+
+	.dbi-product-frame img {
+		display: block;
+		width: 100%;
+		height: auto;
+		background: #fff;
+	}
+
+	.dbi-product-frame figcaption {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem 1.25rem;
+		border-top: 1px solid #334155;
+		background: #071222;
+		padding: 0.75rem 0.9rem;
+		font-size: 0.68rem;
+		color: #94a3b8;
+	}
+
+	.dbi-product-frame figcaption span:first-child {
+		font-weight: 800;
+		color: #7dd3fc;
+	}
+
+	.dbi-question-band {
+		display: grid;
+		border-block: 1px solid var(--dbi-line);
+		background: #071222;
+		padding-inline: max(1rem, calc((100vw - 78rem) / 2));
+	}
+
+	.dbi-question-band > div {
+		padding: 1.5rem 0;
+		border-bottom: 1px solid rgba(51, 65, 85, 0.7);
+	}
+
+	.dbi-question-band > div:last-child {
+		border-bottom: 0;
+	}
+
+	.dbi-question-band span {
+		font-size: 0.64rem;
+		font-weight: 800;
+		color: #38bdf8;
+	}
+
+	.dbi-question-band strong {
+		display: block;
+		margin-top: 0.45rem;
+		font-size: 0.95rem;
+		color: #f8fafc;
+	}
+
+	.dbi-question-band p {
+		margin-top: 0.35rem;
+		font-size: 0.78rem;
+		line-height: 1.5;
+		color: #64748b;
+	}
+
+	.dbi-audience-grid,
+	.dbi-capability-grid {
+		display: grid;
+		gap: 1px;
+		margin-top: 2.5rem;
+		border: 1px solid var(--dbi-line);
+		background: var(--dbi-line);
+	}
+
+	.dbi-audience-grid article,
+	.dbi-capability-grid article {
+		background: #07101f;
+		padding: 1.5rem;
+	}
+
+	.dbi-audience-grid article > p {
+		font-size: 0.65rem;
+		font-weight: 800;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #38bdf8;
+	}
+
+	.dbi-audience-grid h3,
+	.dbi-capability-grid h3 {
+		margin-top: 0.75rem;
+		font-size: 1.05rem;
+		font-weight: 750;
+		color: #f1f5f9;
+	}
+
+	.dbi-audience-grid article > span,
+	.dbi-capability-grid p {
+		display: block;
+		margin-top: 0.65rem;
+		font-size: 0.86rem;
+		line-height: 1.65;
+		color: #94a3b8;
+	}
+
+	.dbi-section--ruled {
+		border-block: 1px solid var(--dbi-line);
+		background: #050d1a;
+	}
+
+	.dbi-capability-grid article > span {
+		font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+		font-size: 0.7rem;
+		font-weight: 800;
+		color: #0ea5e9;
+	}
+
+	.dbi-workflow {
+		display: grid;
+		gap: 0;
+		margin-top: 2.5rem;
+		border-top: 1px solid var(--dbi-line);
+		list-style: none;
+		padding: 0;
+	}
+
+	.dbi-workflow li {
+		display: grid;
+		grid-template-columns: 2.25rem 1fr;
+		gap: 1rem;
+		padding-block: 1.4rem;
+		border-bottom: 1px solid var(--dbi-line);
+	}
+
+	.dbi-workflow li > span {
+		font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+		font-size: 0.7rem;
+		color: #38bdf8;
+	}
+
+	.dbi-workflow strong {
+		font-size: 1rem;
+		color: #f8fafc;
+	}
+
+	.dbi-workflow p {
+		margin-top: 0.35rem;
+		font-size: 0.84rem;
+		line-height: 1.55;
+		color: #94a3b8;
+	}
+
+	.dbi-evidence {
+		display: grid;
+		gap: 2.5rem;
+		padding-block: clamp(3.8rem, 8vw, 7rem);
+		border-block: 1px solid rgba(14, 165, 233, 0.38);
+		background: #082032;
+	}
+
+	.dbi-evidence > div {
+		max-width: 48rem;
+	}
+
+	.dbi-evidence ul {
+		display: grid;
+		align-content: center;
+		gap: 0;
+		margin: 0;
+		padding: 0;
+		border-top: 1px solid rgba(125, 211, 252, 0.26);
+		list-style: none;
+	}
+
+	.dbi-evidence li {
+		display: flex;
+		gap: 0.75rem;
+		padding-block: 0.9rem;
+		border-bottom: 1px solid rgba(125, 211, 252, 0.26);
+		font-size: 0.84rem;
+		color: #cbd5e1;
+	}
+
+	.dbi-evidence li span {
+		color: #67e8f9;
+	}
+
+	.dbi-cta {
+		display: grid;
+		gap: 2rem;
+		align-items: end;
+		padding-block: clamp(4rem, 9vw, 8rem);
+		background: #020617;
+	}
+
+	.dbi-cta .dbi-actions {
+		margin-top: 0;
+	}
+
+	@media (min-width: 640px) {
+		.dbi-audience-grid,
+		.dbi-capability-grid,
+		.dbi-question-band {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		.dbi-question-band > div {
+			padding: 1.5rem;
+			border-right: 1px solid rgba(51, 65, 85, 0.7);
+		}
+
+		.dbi-question-band > div:nth-child(2) {
+			border-right: 0;
+		}
+
+		.dbi-question-band > div:nth-last-child(-n + 2) {
+			border-bottom: 0;
+		}
+	}
+
+	@media (min-width: 900px) {
+		.dbi-hero {
+			grid-template-columns: minmax(0, 1.65fr) minmax(18rem, 0.65fr);
+		}
+
+		.dbi-section-heading--split,
+		.dbi-evidence,
+		.dbi-cta {
+			grid-template-columns: minmax(0, 1.25fr) minmax(20rem, 0.75fr);
+		}
+
+		.dbi-question-band {
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+		}
+
+		.dbi-question-band > div,
+		.dbi-question-band > div:nth-child(2) {
+			border-right: 1px solid rgba(51, 65, 85, 0.7);
+			border-bottom: 0;
+		}
+
+		.dbi-question-band > div:last-child {
+			border-right: 0;
+		}
+
+		.dbi-audience-grid {
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+		}
+
+		.dbi-capability-grid {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+
+		.dbi-workflow {
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+			border-bottom: 1px solid var(--dbi-line);
+		}
+
+		.dbi-workflow li {
+			display: block;
+			min-height: 10rem;
+			padding: 1.35rem;
+			border-right: 1px solid var(--dbi-line);
+			border-bottom: 0;
+		}
+
+		.dbi-workflow li:last-child {
+			border-right: 0;
+		}
+
+		.dbi-workflow li > div {
+			margin-top: 2.2rem;
+		}
+	}
+
+	@media (max-width: 639px) {
+		.dbi-product-frame__viewport img {
+			width: 60rem;
+			max-width: none;
+		}
+
+		.dbi-product-frame__bar small {
+			display: none;
+		}
+
+		.dbi-button {
+			width: 100%;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.dbi-button {
+			transition: none;
+		}
+	}
+</style>
