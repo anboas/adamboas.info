@@ -1,0 +1,263 @@
+---
+import { STORE_URL, storeProducts, storeProductUrl } from '../data/store';
+---
+
+<section class="store-section card p-6" aria-labelledby="store-title" data-store-carousel>
+	<div class="store-heading">
+		<div>
+			<p class="store-kicker">Authority to Iterate</p>
+			<h2 id="store-title" class="section-title">Ideas with a field life</h2>
+			<p class="store-intro">Wearable arguments, field notes, and working artifacts drawn from the writing.</p>
+		</div>
+		<div class="store-actions">
+			<div class="store-controls" aria-label="Product carousel controls">
+				<button type="button" data-store-previous aria-label="Show previous products">←</button>
+				<button type="button" data-store-next aria-label="Show next products">→</button>
+			</div>
+			<a class="ui-link-btn ui-link-btn-primary store-link" href={STORE_URL}>Open the store</a>
+		</div>
+	</div>
+
+	<div class="store-viewport" data-store-viewport tabindex="0" aria-label="Authority to Iterate products">
+		<div class="store-track">
+			{
+				storeProducts.map((product) => (
+					<a class="store-product" href={storeProductUrl(product.slug)} data-store-product>
+						<div class="store-product-image">
+							<img src={product.imageUrl} alt={product.name} loading="lazy" decoding="async" />
+						</div>
+						<div class="store-product-copy">
+							<p class="store-product-price">{product.price}</p>
+							<h3>{product.name}</h3>
+							<p>{product.description}</p>
+							<span>
+								View product <span aria-hidden="true">→</span>
+							</span>
+						</div>
+					</a>
+				))
+			}
+		</div>
+	</div>
+</section>
+
+<script>
+	document.querySelectorAll<HTMLElement>('[data-store-carousel]').forEach((carousel) => {
+		const viewport = carousel.querySelector<HTMLElement>('[data-store-viewport]');
+		const previous = carousel.querySelector<HTMLButtonElement>('[data-store-previous]');
+		const next = carousel.querySelector<HTMLButtonElement>('[data-store-next]');
+		const firstCard = carousel.querySelector<HTMLElement>('[data-store-product]');
+		if (!viewport || !previous || !next || !firstCard) return;
+
+		const step = () => {
+			const styles = window.getComputedStyle(firstCard.parentElement ?? firstCard);
+			return firstCard.getBoundingClientRect().width + Number.parseFloat(styles.columnGap || styles.gap || '0');
+		};
+
+		const updateControls = () => {
+			const end = viewport.scrollWidth - viewport.clientWidth;
+			previous.disabled = viewport.scrollLeft <= 2;
+			next.disabled = viewport.scrollLeft >= end - 2;
+		};
+
+		previous.addEventListener('click', () => viewport.scrollBy({ left: -step(), behavior: 'smooth' }));
+		next.addEventListener('click', () => viewport.scrollBy({ left: step(), behavior: 'smooth' }));
+		viewport.addEventListener('scroll', updateControls, { passive: true });
+		new ResizeObserver(updateControls).observe(viewport);
+		updateControls();
+	});
+</script>
+
+<style>
+	.store-section {
+		overflow: hidden;
+	}
+
+	.store-heading {
+		display: flex;
+		align-items: end;
+		justify-content: space-between;
+		gap: 1.5rem;
+	}
+
+	.store-kicker {
+		margin-bottom: 0.65rem;
+		font-size: 0.62rem;
+		line-height: 1;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		color: rgba(45, 212, 191, 0.9);
+	}
+
+	.store-intro {
+		margin-top: 0.75rem;
+		max-width: 42rem;
+		font-size: 0.875rem;
+		line-height: 1.65;
+		color: rgb(148, 163, 184);
+	}
+
+	.store-actions,
+	.store-controls {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	.store-actions {
+		flex: 0 0 auto;
+	}
+
+	.store-controls button {
+		display: inline-flex;
+		width: 2.75rem;
+		height: 2.75rem;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid rgba(71, 85, 105, 0.82);
+		background: rgb(2, 6, 23);
+		color: rgb(226, 232, 240);
+		font-size: 1rem;
+		cursor: pointer;
+	}
+
+	.store-controls button:hover:not(:disabled) {
+		border-color: rgba(45, 212, 191, 0.76);
+		background: rgba(20, 184, 166, 0.16);
+	}
+
+	.store-controls button:disabled {
+		opacity: 0.35;
+		cursor: default;
+	}
+
+	.store-link {
+		height: 2.75rem;
+		white-space: nowrap;
+	}
+
+	.store-viewport {
+		margin-top: 1.25rem;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		scrollbar-width: thin;
+		scrollbar-color: rgba(71, 85, 105, 0.9) rgb(2, 6, 23);
+	}
+
+	.store-track {
+		display: grid;
+		grid-auto-flow: column;
+		grid-auto-columns: 22rem;
+		gap: 1rem;
+		padding-bottom: 0.75rem;
+	}
+
+	.store-product {
+		display: flex;
+		min-width: 0;
+		flex-direction: column;
+		overflow: hidden;
+		scroll-snap-align: start;
+		border: 1px solid rgba(51, 65, 85, 0.9);
+		background: rgba(2, 6, 23, 0.94);
+		color: rgb(226, 232, 240);
+		text-decoration: none;
+		transition:
+			border-color 150ms ease,
+			background 150ms ease;
+	}
+
+	.store-product:hover {
+		border-color: rgba(45, 212, 191, 0.58);
+		background: rgba(15, 23, 42, 0.92);
+	}
+
+	.store-product-image {
+		display: grid;
+		aspect-ratio: 1 / 1;
+		place-items: center;
+		overflow: hidden;
+		border-bottom: 1px solid rgba(51, 65, 85, 0.82);
+		background:
+			linear-gradient(to right, rgba(148, 163, 184, 0.04) 1px, transparent 1px),
+			linear-gradient(to bottom, rgba(148, 163, 184, 0.04) 1px, transparent 1px), rgb(0, 0, 0);
+		background-size: 24px 24px;
+	}
+
+	.store-product-image img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		transition: transform 180ms ease;
+	}
+
+	.store-product:hover .store-product-image img {
+		transform: scale(1.025);
+	}
+
+	.store-product-copy {
+		display: flex;
+		min-height: 12rem;
+		flex: 1;
+		flex-direction: column;
+		padding: 1rem;
+	}
+
+	.store-product-price {
+		font-size: 0.68rem;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: rgb(212, 165, 116);
+	}
+
+	.store-product-copy h3 {
+		margin-top: 0.45rem;
+		font-size: 1rem;
+		font-weight: 700;
+		line-height: 1.35;
+		color: rgb(248, 250, 252);
+	}
+
+	.store-product-copy > p:last-of-type {
+		margin-top: 0.6rem;
+		font-size: 0.78rem;
+		line-height: 1.55;
+		color: rgb(148, 163, 184);
+	}
+
+	.store-product-copy span {
+		margin-top: auto;
+		padding-top: 1rem;
+		font-size: 0.72rem;
+		font-weight: 700;
+		color: rgb(204, 251, 241);
+	}
+
+	@media (max-width: 767px) {
+		.store-heading {
+			align-items: stretch;
+			flex-direction: column;
+			gap: 1rem;
+		}
+
+		.store-actions {
+			justify-content: space-between;
+		}
+
+		.store-track {
+			grid-auto-columns: minmax(16rem, 86%);
+			gap: 0.75rem;
+		}
+
+		.store-product-copy {
+			min-height: 11.5rem;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.store-product-image img {
+			transition: none;
+		}
+	}
+</style>
