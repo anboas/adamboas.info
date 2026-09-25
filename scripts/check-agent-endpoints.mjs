@@ -3,7 +3,11 @@
 const base = process.env.SITE_BASE || 'http://127.0.0.1:4321';
 
 const checks = [
-	{ path: '/llms.txt', type: 'text', mustContain: ['/agents.json', '/writing/manifest.json'] },
+	{
+		path: '/llms.txt',
+		type: 'text',
+		mustContain: ['/agents.json', '/writing/manifest.json', '/tools/defense-budget-intelligence/'],
+	},
 	{
 		path: '/llms-full.txt',
 		type: 'text',
@@ -15,6 +19,7 @@ const checks = [
 			'/opportunities/export-sam.json',
 			'/opportunities/export-sam-core.json',
 			'/opportunities/export-sbir.json',
+			'/tools/defense-budget-intelligence/',
 		],
 	},
 	{
@@ -97,7 +102,11 @@ const checks = [
 		requiredKeys: ['schema_version', 'tracked_source_integrity'],
 		validate: validateIntegrity,
 	},
-	{ path: '/for-agents/', type: 'html', mustContain: ['For Agents', 'Discovery Endpoints'] },
+	{
+		path: '/for-agents/',
+		type: 'html',
+		mustContain: ['For Agents', 'Discovery Endpoints', '/tools/defense-budget-intelligence/'],
+	},
 	{
 		path: '/.well-known/agent-manifest.json',
 		type: 'json',
@@ -229,6 +238,11 @@ function validateAgents(data) {
 		'/opportunities/lineage.json',
 		'/agents.json preferred_ingestion_order',
 	);
+	assertHasEndpointWithPath(
+		data.preferred_ingestion_order,
+		'/tools/defense-budget-intelligence/',
+		'/agents.json preferred_ingestion_order',
+	);
 
 	assert(Array.isArray(data.resources) && data.resources.length >= 5, '/agents.json resources must be non-empty array');
 	const ids = new Set();
@@ -242,6 +256,7 @@ function validateAgents(data) {
 		);
 		assertAbsUrl(resource.url, `/agents.json resource url (${resource.id})`);
 	}
+	assert(ids.has('defense-budget-intelligence'), '/agents.json missing Defense Budget Intelligence resource');
 }
 
 function validatePriority(data) {
@@ -267,6 +282,12 @@ function validatePriority(data) {
 	assert(
 		typeof data.crawler_hints?.agent_view_query === 'string',
 		'/agent-priority crawler_hints.agent_view_query missing',
+	);
+	assert(
+		data.ingestion_tiers.some((tier) =>
+			tier.endpoints.some((endpoint) => endpoint.includes('/tools/defense-budget-intelligence/')),
+		),
+		'/agent-priority.json missing Defense Budget Intelligence endpoint',
 	);
 }
 
@@ -488,6 +509,10 @@ function validateWellKnownManifest(data) {
 	assertAbsUrl(data.canonical_manifest, '/.well-known/agent-manifest.json canonical_manifest');
 	assertAbsUrl(data.discovery?.llms, '/.well-known/agent-manifest.json discovery.llms');
 	assertAbsUrl(data.discovery?.llms_full, '/.well-known/agent-manifest.json discovery.llms_full');
+	assertAbsUrl(
+		data.discovery?.defense_budget_intelligence,
+		'/.well-known/agent-manifest.json discovery.defense_budget_intelligence',
+	);
 	assert(
 		Array.isArray(data.discovery?.surface_maps),
 		'/.well-known/agent-manifest.json discovery.surface_maps must be array',

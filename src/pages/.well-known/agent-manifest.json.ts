@@ -14,6 +14,7 @@ export const GET: APIRoute = () => {
 			integrity: absoluteUrl('/integrity.json'),
 			for_agents: absoluteUrl('/for-agents/'),
 			strategic_work: absoluteUrl('/strategic-work/'),
+			defense_budget_intelligence: absoluteUrl('/tools/defense-budget-intelligence/'),
 			surface_maps: [
 				absoluteUrl('/writing/agent.json'),
 				absoluteUrl('/events/agent.json'),

@@ -243,6 +243,13 @@ export const fullResumeExperience: FullResumeRole[] = [
 
 export const fullResumeSideProjects: FullResumeSideProject[] = [
 	{
+		title: 'Defense Budget Intelligence',
+		url: 'https://www.adamboas.com/tools/defense-budget-intelligence/',
+		label: 'adamboas.com/tools/defense-budget-intelligence',
+		description:
+			'Source-grounded decision workspace for defense growth, capture, acquisition, and portfolio teams. It unifies contract timelines, procurement changes, budget and spending evidence, team calendars, and follow-on signals into a current-window operating picture with explicit source lineage.',
+	},
+	{
 		title: 'Opportunity Intelligence',
 		url: 'https://opportunity-intelligence-full.pages.dev/',
 		label: 'opportunity-intelligence-full.pages.dev',

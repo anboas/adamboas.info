@@ -17,6 +17,7 @@ export const GET: APIRoute = () => {
 		`- ${absoluteUrl('/writing/')}`,
 		`- ${absoluteUrl('/profile/')}`,
 		`- ${absoluteUrl('/capabilities/')}`,
+		`- ${absoluteUrl('/tools/defense-budget-intelligence/')}`,
 		`- ${absoluteUrl('/events/')}`,
 		`- ${absoluteUrl('/opportunities/')}`,
 		'',

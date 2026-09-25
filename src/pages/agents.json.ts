@@ -24,6 +24,7 @@ export const GET: APIRoute = () => {
 			'writing-corpus',
 			'event-intelligence',
 			'opportunity-intelligence',
+			'defense-budget-intelligence',
 			'capability-mapping',
 		],
 		preferred_ingestion_order: [
@@ -41,6 +42,7 @@ export const GET: APIRoute = () => {
 			absoluteUrl('/opportunities/lineage.json'),
 			absoluteUrl('/writing/'),
 			absoluteUrl('/strategic-work/'),
+			absoluteUrl('/tools/defense-budget-intelligence/'),
 			absoluteUrl('/capabilities/'),
 			absoluteUrl('/events/'),
 			absoluteUrl('/opportunities/'),
@@ -49,6 +51,7 @@ export const GET: APIRoute = () => {
 		resources: [
 			{ id: 'writing-manifest', type: 'manifest', url: absoluteUrl('/writing/manifest.json') },
 			{ id: 'strategic-work', type: 'surface', url: absoluteUrl('/strategic-work/') },
+			{ id: 'defense-budget-intelligence', type: 'product-surface', url: absoluteUrl('/tools/defense-budget-intelligence/') },
 			{ id: 'writing-surface-map', type: 'surface-map', url: absoluteUrl('/writing/agent.json') },
 			{ id: 'events-surface-map', type: 'surface-map', url: absoluteUrl('/events/agent.json') },
 			{ id: 'opportunities-surface-map', type: 'surface-map', url: absoluteUrl('/opportunities/agent.json') },
