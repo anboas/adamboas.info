@@ -9,7 +9,8 @@ const PRODUCT_URL = 'https://defense-budget-intelligence.pages.dev/';
 
 const discoveryFiles = [
 	'src/components/Header.astro',
-	'src/components/Footer.astro',
+	'src/components/StickyBrowseBar.astro',
+	'src/data/fullResume.ts',
 	'src/pages/index.astro',
 	'src/pages/sitemap.astro',
 	'src/pages/llms.txt.ts',
@@ -17,14 +18,27 @@ const discoveryFiles = [
 	'src/pages/agents.json.ts',
 	'src/pages/agent-priority.json.ts',
 	'src/pages/.well-known/agent-manifest.json.ts',
-	'src/pages/.well-known/llms.txt.ts',
+	'src/pages/for-agents/index.astro',
 ];
 
-test('quiet-launch page stays out of site discovery surfaces', async () => {
+test('public launch page is wired into site discovery surfaces', async () => {
 	for (const relativePath of discoveryFiles) {
 		const source = fs.readFileSync(path.resolve(relativePath), 'utf8');
-		expect(source, `${relativePath} must not link or advertise the quiet-launch route`).not.toContain(ROUTE);
+		expect(source, `${relativePath} must link or advertise the public product route`).toContain(ROUTE);
 	}
+
+	const astroConfig = fs.readFileSync(path.resolve('astro.config.mjs'), 'utf8');
+	expect(astroConfig, 'the public product route must not be excluded from the XML sitemap').not.toContain(`'${ROUTE}'`);
+});
+
+test('full resume lists Defense Budget Intelligence as a linked side project', async ({ page }) => {
+	const response = await page.goto(`${BASE}/full/`, { waitUntil: 'networkidle' });
+
+	expect(response).not.toBeNull();
+	expect(response!.status()).toBe(200);
+	const project = page.locator('.project-item').filter({ hasText: 'Defense Budget Intelligence' });
+	await expect(project).toBeVisible();
+	await expect(project.getByRole('link')).toHaveAttribute('href', `https://www.adamboas.com${ROUTE}`);
 });
 
 test.describe('Defense Budget Intelligence landing page', () => {
@@ -41,8 +55,14 @@ test.describe('Defense Budget Intelligence landing page', () => {
 			expect(response!.status()).toBe(200);
 			await expect(page).toHaveTitle(/Defense Budget Intelligence/);
 			await expect(page.locator('h1')).toHaveText('See the contract timeline before it becomes the deadline.');
-			await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex,nofollow');
-			await expect(page.locator('meta[name="googlebot"]')).toHaveAttribute('content', 'noindex,nofollow');
+			await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
+				'content',
+				'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1',
+			);
+			await expect(page.locator('meta[name="googlebot"]')).toHaveAttribute(
+				'content',
+				'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1',
+			);
 			await expect(page.getByRole('heading', { name: /Team calendar and kiosk mode/i })).toBeVisible();
 			await expect(page.getByRole('heading', { name: /Agentic discovery and augmentation/i })).toBeVisible();
 			await expect(page.locator('[data-product-phase="next"]')).toContainText('Review-first by design');
@@ -79,7 +99,7 @@ test.describe('Defense Budget Intelligence landing page', () => {
 
 			const sitemap = await request.get(`${BASE}/sitemap-0.xml`);
 			expect(sitemap.ok()).toBeTruthy();
-			expect(await sitemap.text()).not.toContain(ROUTE);
+			expect(await sitemap.text()).toContain(ROUTE);
 
 			const finalCta = page.getByRole('link', { name: 'Open the workspace' });
 			await finalCta.scrollIntoViewIfNeeded();

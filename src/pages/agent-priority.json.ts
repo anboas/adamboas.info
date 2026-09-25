@@ -44,6 +44,7 @@ export const GET: APIRoute = () => {
 					absoluteUrl('/writing/'),
 					absoluteUrl('/profile/'),
 					absoluteUrl('/capabilities/'),
+					absoluteUrl('/tools/defense-budget-intelligence/'),
 				],
 				refresh_hint: 'daily',
 			},

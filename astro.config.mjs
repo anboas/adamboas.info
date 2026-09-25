@@ -10,7 +10,6 @@ const excludedSitemapPaths = new Set([
 	'/blog/',
 	'/content-license/',
 	'/credentials/',
-	'/tools/defense-budget-intelligence/',
 	'/opportunities/sam/',
 	'/opportunities/sbir/',
 	'/opportunities/sbir-sttr/',

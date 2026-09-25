@@ -18,6 +18,7 @@ export const GET: APIRoute = () => {
 		`- Profile: ${absoluteUrl('/profile/')}`,
 		`- Capabilities: ${absoluteUrl('/capabilities/')}`,
 		`- Speaking: ${absoluteUrl('/speaking/')}`,
+		`- Defense Budget Intelligence: ${absoluteUrl('/tools/defense-budget-intelligence/')}`,
 		'',
 		'## Operational surfaces (some may be noindex by design)',
 		`- Events: ${absoluteUrl('/events/')}`,

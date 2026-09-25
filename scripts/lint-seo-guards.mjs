@@ -85,7 +85,6 @@ const mustNoindex = [
 	'src/pages/experience/[slug].astro',
 	'src/pages/education/index.astro',
 	'src/pages/education/[slug].astro',
-	'src/pages/tools/defense-budget-intelligence/index.astro',
 ];
 
 for (const file of mustNoindex) {
@@ -100,6 +99,7 @@ const coreIndexable = [
 	'src/pages/writing/index.astro',
 	'src/pages/capabilities/index.astro',
 	'src/pages/capabilities/[slug].astro',
+	'src/pages/tools/defense-budget-intelligence/index.astro',
 ];
 for (const file of coreIndexable) {
 	const src = read(file);
@@ -116,6 +116,7 @@ const coreSharePages = {
 	'src/pages/opportunities/index.astro': '/og/opportunities.png',
 	'src/pages/opportunities/sam.astro': '/og/opportunities-sam.png',
 	'src/pages/opportunities/sbir.astro': '/og/opportunities-sbir.png',
+	'src/pages/tools/defense-budget-intelligence/index.astro': '/og/tools/defense-budget-intelligence.png',
 };
 
 for (const [file, imagePath] of Object.entries(coreSharePages)) {
@@ -124,18 +125,9 @@ for (const [file, imagePath] of Object.entries(coreSharePages)) {
 	assert(exists(`public${imagePath}`), `Missing OG image asset ${imagePath} required by ${file}`);
 }
 
-const quietToolPage = read('src/pages/tools/defense-budget-intelligence/index.astro');
 assert(
-	quietToolPage.includes('image="/og/tools/defense-budget-intelligence.png"'),
-	'Defense Budget Intelligence landing page must use its product OG image.',
-);
-assert(
-	exists('public/og/tools/defense-budget-intelligence.png'),
-	'Missing Defense Budget Intelligence landing-page OG image.',
-);
-assert(
-	read('astro.config.mjs').includes("'/tools/defense-budget-intelligence/'"),
-	'Quiet-launch tool page must remain excluded from the XML sitemap.',
+	!read('astro.config.mjs').includes("'/tools/defense-budget-intelligence/'"),
+	'Public Defense Budget Intelligence page must remain included in the XML sitemap.',
 );
 
 const capabilityDetailSrc = read('src/pages/capabilities/[slug].astro');
