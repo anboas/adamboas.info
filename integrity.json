@@ -2,27 +2,27 @@
   "schema_version": "1.0",
   "site": "https://www.adamboas.com/",
   "release_version": "v2.5.5",
-  "generated_at": "2026-09-25T14:10:57.236Z",
+  "generated_at": "2026-09-25T14:19:45.762Z",
   "tracked_source_integrity": [
     {
       "path": "src/pages/llms.txt.ts",
-      "sha256": "1897e4f9e38cc79f427f3e5e1a082cf8361bfa55c26975fbc25f73346eacaf6c",
-      "bytes": 1367
+      "sha256": "1248f1a1faa296551beb6078c2ed258f4e4cc1444c603b05ef7bf85dc432bfb8",
+      "bytes": 1428
     },
     {
       "path": "src/pages/llms-full.txt.ts",
-      "sha256": "565d001a0e2f74423c57427ba8ae0c5a8337e98c367a4227986133f31e7439ae",
-      "bytes": 3693
+      "sha256": "f582ab5e0965898793f618b3c0e4e525e394be2fefa9c2f578af36879a026598",
+      "bytes": 3783
     },
     {
       "path": "src/pages/agents.json.ts",
-      "sha256": "8a616f4bd40bbddf8909a332cf7db6619e14695499d000698298c54889c1be45",
-      "bytes": 4489
+      "sha256": "1309a1ee9749c9967293bcfec357b2dd5d21675da64ea49b479e0e684455acdf",
+      "bytes": 4702
     },
     {
       "path": "src/pages/agent-priority.json.ts",
-      "sha256": "6366fb27591330dba41b72571a4a1690db40b243df18a8b60f3e211ebaea4e4b",
-      "bytes": 2278
+      "sha256": "2fcf6c7db4b08ab80b635021b206fed5892501b5f55660d07a7a8c2f9b60457b",
+      "bytes": 2335
     },
     {
       "path": "src/pages/strategic-work/index.astro",
@@ -101,8 +101,8 @@
     },
     {
       "path": "src/pages/.well-known/agent-manifest.json.ts",
-      "sha256": "dbbe541cbe316ae3bae09c45fd6895641aa72007d844c4b0df83d3e0dd9f5b5d",
-      "bytes": 1688
+      "sha256": "0ae402faafa8311512141f6ba5bad40e3186fcba6f1b8d6240b52c9848665ffb",
+      "bytes": 1772
     },
     {
       "path": "src/pages/.well-known/llms.txt.ts",
@@ -151,8 +151,8 @@
     },
     {
       "path": "src/pages/for-agents/index.astro",
-      "sha256": "6ea8f4e1de292a731809c1d6cf841e3b02a835556dafcc07272b7a2f18f41918",
-      "bytes": 5610
+      "sha256": "54187cc4cbc038a94fa2ade85727dee0dde0d5c44eea6910cfc9f81c81d576ab",
+      "bytes": 5809
     },
     {
       "path": "src/data/discovery-events.json",

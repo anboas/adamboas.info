@@ -3,7 +3,7 @@
   "name": "Adam Boas Public Site Agent Manifest",
   "site": "https://www.adamboas.com/",
   "release_version": "v2.5.5",
-  "generated_at": "2026-09-25T14:10:56.486Z",
+  "generated_at": "2026-09-25T14:19:45.304Z",
   "discovery": {
     "start": "https://www.adamboas.com/for-agents/",
     "llms": "https://www.adamboas.com/llms.txt",
@@ -17,6 +17,7 @@
     "writing-corpus",
     "event-intelligence",
     "opportunity-intelligence",
+    "defense-budget-intelligence",
     "capability-mapping"
   ],
   "preferred_ingestion_order": [
@@ -34,6 +35,7 @@
     "https://www.adamboas.com/opportunities/lineage.json",
     "https://www.adamboas.com/writing/",
     "https://www.adamboas.com/strategic-work/",
+    "https://www.adamboas.com/tools/defense-budget-intelligence/",
     "https://www.adamboas.com/capabilities/",
     "https://www.adamboas.com/events/",
     "https://www.adamboas.com/opportunities/",
@@ -49,6 +51,11 @@
       "id": "strategic-work",
       "type": "surface",
       "url": "https://www.adamboas.com/strategic-work/"
+    },
+    {
+      "id": "defense-budget-intelligence",
+      "type": "product-surface",
+      "url": "https://www.adamboas.com/tools/defense-budget-intelligence/"
     },
     {
       "id": "writing-surface-map",
