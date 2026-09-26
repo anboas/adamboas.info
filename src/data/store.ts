@@ -17,6 +17,46 @@ export const storeProducts: StoreProduct[] = [
 		imageUrl: '/merch/mission-tempo/control-planes-over-models-storefront-hero.png',
 	},
 	{
+		name: 'Control Planes Decision Log',
+		description: 'A hardcover notebook for architectures, hypotheses, and the next iteration.',
+		price: '$26.00',
+		slug: 'control-planes-decision-log',
+		imageUrl:
+			'https://cdn.fourthwall.com/customizations/sh_4089b78b-d945-4e72-850a-cd87de50c010/ed5ed394-6b89-4978-bad6-243bcfc50520.webp',
+	},
+	{
+		name: 'Control Plane Cap',
+		description: 'The architecture mark on a quiet, organic-cotton dad cap.',
+		price: '$32.00',
+		slug: 'control-plane-cap',
+		imageUrl:
+			'https://cdn.fourthwall.com/customizations/sh_4089b78b-d945-4e72-850a-cd87de50c010/694fe7dd-43c0-40b8-a05c-be1b7ba72c2e.webp',
+	},
+	{
+		name: 'Control Planes Desk Mat',
+		description: 'A full-width control-plane architecture for the workstation.',
+		price: '$34.00',
+		slug: 'control-planes-desk-mat',
+		imageUrl:
+			'https://cdn.fourthwall.com/customizations/sh_4089b78b-d945-4e72-850a-cd87de50c010/ed6dc164-095a-46e2-a879-2fc70138d37f.webp',
+	},
+	{
+		name: 'Control Planes Sticker',
+		description: 'The complete lockup as a durable four-inch vinyl sticker.',
+		price: '$8.49',
+		slug: 'control-planes-sticker',
+		imageUrl:
+			'https://cdn.fourthwall.com/customizations/sh_4089b78b-d945-4e72-850a-cd87de50c010/40b9dba0-71e7-4743-8154-e1dbe2d235d4.webp',
+	},
+	{
+		name: 'Control Planes Insulated Tumbler',
+		description: 'A laser-etched control-plane mark on a 20 oz insulated tumbler.',
+		price: '$37.95',
+		slug: 'control-planes-insulated-tumbler',
+		imageUrl:
+			'https://cdn.fourthwall.com/customizations/sh_4089b78b-d945-4e72-850a-cd87de50c010/6e4ca90a-77d8-43f9-892e-aefe3e79345b.webp',
+	},
+	{
 		name: 'Authority to Iterate Wordmark Tee',
 		description: 'The operating principle, embroidered up front.',
 		price: '$29.57',
