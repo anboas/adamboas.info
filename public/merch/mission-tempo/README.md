@@ -9,3 +9,8 @@ These transparent lockups are sized to the existing Fourthwall large-center embr
 - Intended placement: `embroidery_large_center`
 
 The PNGs are rasterized from the SVG sources at full resolution for Fourthwall preview generation. Final sale still requires a physical sample check for digitization, stitch density, thread color, puckering, and wash behavior.
+
+## Assets
+
+- `control-planes-over-models-front`: high, centered blazer-compatible front lockup with the standard `adamboas.com` sleeve treatment retained in Fourthwall.
+- `control-planes-over-models-storefront-hero`: generated product mockup showing the standalone shirt, sleeve detail, and blazer presentation.
