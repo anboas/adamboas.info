@@ -8,7 +8,11 @@ test.describe('storefront integration', () => {
 		await page.goto(`${BASE}/`, { waitUntil: 'domcontentloaded' });
 
 		await expect(page.getByRole('heading', { name: 'Ideas with a field life' })).toBeVisible();
-		await expect(page.locator('[data-store-product]')).toHaveCount(4);
+		await expect(page.locator('[data-store-product]')).toHaveCount(5);
+		await expect(page.getByRole('link', { name: /Control Planes > Models Tee/ })).toHaveAttribute(
+			'href',
+			'https://shop.adamboas.com/products/control-planes-over-models-tee',
+		);
 		await page.locator('[data-store-carousel]').scrollIntoViewIfNeeded();
 		await expect
 			.poll(() =>

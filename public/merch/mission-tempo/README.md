@@ -13,3 +13,4 @@ The PNGs are rasterized from the SVG sources at full resolution for Fourthwall p
 ## Assets
 
 - `control-planes-over-models-front`: high, centered blazer-compatible front lockup with the standard `adamboas.com` sleeve treatment retained in Fourthwall.
+- `control-planes-over-models-storefront-hero`: generated product mockup showing the standalone shirt, sleeve detail, and blazer presentation.
