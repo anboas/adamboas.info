@@ -8,12 +8,25 @@ test.describe('storefront integration', () => {
 		await page.goto(`${BASE}/`, { waitUntil: 'domcontentloaded' });
 
 		await expect(page.getByRole('heading', { name: 'Ideas with a field life' })).toBeVisible();
-		await expect(page.locator('[data-store-product]')).toHaveCount(5);
+		await expect(page.locator('[data-store-product]')).toHaveCount(10);
 		await expect(page.getByRole('link', { name: /Control Planes > Models Tee/ })).toHaveAttribute(
 			'href',
 			'https://shop.adamboas.com/products/control-planes-over-models-tee',
 		);
+		for (const slug of [
+			'control-planes-decision-log',
+			'control-plane-cap',
+			'control-planes-desk-mat',
+			'control-planes-sticker',
+			'control-planes-insulated-tumbler',
+		]) {
+			await expect(page.locator(`[data-store-product][href$="/products/${slug}"]`)).toHaveCount(1);
+		}
 		await page.locator('[data-store-carousel]').scrollIntoViewIfNeeded();
+		const viewport = page.locator('[data-store-viewport]');
+		for (const image of await page.locator('[data-store-product] img').all()) {
+			await image.scrollIntoViewIfNeeded();
+		}
 		await expect
 			.poll(() =>
 				page.locator('[data-store-product] img').evaluateAll((images) =>
@@ -38,7 +51,11 @@ test.describe('storefront integration', () => {
 		expect(productLinks.every((link) => link.host === 'shop.adamboas.com')).toBe(true);
 		expect(productLinks.every((link) => link.path.startsWith('/products/'))).toBe(true);
 
-		const viewport = page.locator('[data-store-viewport]');
+		await viewport.evaluate((element) => {
+			element.scrollLeft = 0;
+			element.dispatchEvent(new Event('scroll'));
+		});
+		await expect(page.getByRole('button', { name: 'Show next products' })).toBeEnabled();
 		const before = await viewport.evaluate((element) => element.scrollLeft);
 		await page.getByRole('button', { name: 'Show next products' }).click();
 		await expect.poll(() => viewport.evaluate((element) => element.scrollLeft)).toBeGreaterThan(before);
