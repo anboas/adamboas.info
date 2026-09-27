@@ -8,7 +8,8 @@ test.describe('storefront integration', () => {
 		await page.goto(`${BASE}/`, { waitUntil: 'domcontentloaded' });
 
 		await expect(page.getByRole('heading', { name: 'Ideas with a field life' })).toBeVisible();
-		await expect(page.locator('[data-store-product]')).toHaveCount(10);
+		await expect(page.locator('[data-store-product]')).toHaveCount(9);
+		await expect(page.locator('[data-store-product][href*="control-planes-insulated-tumbler"]')).toHaveCount(0);
 		await expect(page.getByRole('link', { name: /Control Planes > Models Tee/ })).toHaveAttribute(
 			'href',
 			'https://shop.adamboas.com/products/control-planes-over-models-tee',
@@ -18,7 +19,6 @@ test.describe('storefront integration', () => {
 			'control-plane-cap',
 			'control-planes-desk-mat',
 			'control-planes-sticker',
-			'control-planes-insulated-tumbler',
 		]) {
 			await expect(page.locator(`[data-store-product][href$="/products/${slug}"]`)).toHaveCount(1);
 		}
