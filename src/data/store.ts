@@ -49,14 +49,6 @@ export const storeProducts: StoreProduct[] = [
 			'https://cdn.fourthwall.com/customizations/sh_4089b78b-d945-4e72-850a-cd87de50c010/40b9dba0-71e7-4743-8154-e1dbe2d235d4.webp',
 	},
 	{
-		name: 'Control Planes Insulated Tumbler',
-		description: 'A laser-etched control-plane mark on a 20 oz insulated tumbler.',
-		price: '$37.95',
-		slug: 'control-planes-insulated-tumbler',
-		imageUrl:
-			'https://cdn.fourthwall.com/customizations/sh_4089b78b-d945-4e72-850a-cd87de50c010/6e4ca90a-77d8-43f9-892e-aefe3e79345b.webp',
-	},
-	{
 		name: 'Authority to Iterate Wordmark Tee',
 		description: 'The operating principle, embroidered up front.',
 		price: '$29.57',
