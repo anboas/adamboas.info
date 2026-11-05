@@ -226,7 +226,8 @@ word, different meaning” failures</p></li>
 </div>
 <h2 id="conceptual-view-ov1">Conceptual View (OV‑1)</h2>
 <figure>
-<img src="papers/acp-ra/diagrams/acp_ov1_simplified.png" />
+<img src="papers/acp-ra/diagrams/acp_ov1_simplified.png"
+style="width:90.0%;height:60.0%" />
 <figcaption>ACP OV-1</figcaption>
 </figure>
 <p>The conceptual model is a control system with two planes:</p>
@@ -548,27 +549,27 @@ Consequence is the most effective way to translate “mission impact” into
 enforceable controls.</p>
 <table>
 <tbody>
-<tr class="odd">
+<tr>
 <td style="text-align: left;">Tier</td>
 <td style="text-align: left;">Representative activities
 (non-exhaustive)</td>
 <td style="text-align: left;">Minimum required controls</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: left;"><strong>T0 — Low</strong></td>
 <td style="text-align: left;">drafting, summarization, analysis with
 read-only context</td>
 <td style="text-align: left;">NPE identity; data/tag controls; basic
 evidence logging; deny-by-default tool use</td>
 </tr>
-<tr class="odd">
+<tr>
 <td style="text-align: left;"><strong>T1 — Moderate</strong></td>
 <td style="text-align: left;">PR creation, ticket automation, config
 recommendations (no direct apply)</td>
 <td style="text-align: left;">tool mediation; budgets (tokens/tool
 calls/egress); baseline eval pack; drift monitoring</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: left;"><strong>T2 — High</strong></td>
 <td style="text-align: left;">executing changes in production,
 account/permission changes, external comms; GUI-based operations in
@@ -576,7 +577,7 @@ controlled environments</td>
 <td style="text-align: left;">human-on-the-loop approvals; dual-control
 for sensitive actions; enhanced evidence; rollback rehearsal</td>
 </tr>
-<tr class="odd">
+<tr>
 <td style="text-align: left;"><strong>T3 — Life/Safety /
 Mission-Critical</strong></td>
 <td style="text-align: left;">actions affecting safety, critical
@@ -973,13 +974,13 @@ governs both by applying the same policy primitives—identity, trust
 scope, budgets, and evidence—at the appropriate gateway.</p>
 <table>
 <tbody>
-<tr class="odd">
+<tr>
 <td style="text-align: left;">Interop surface</td>
 <td style="text-align: left;">Typical protocol family</td>
 <td style="text-align: left;">ACP enforcement boundary</td>
 <td style="text-align: left;">Governance focus</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: left;">Agent &lt;-&gt; Agent (delegation,
 coordination, swarm messaging)</td>
 <td style="text-align: left;">A2A or equivalent</td>
@@ -988,7 +989,7 @@ coordination, swarm messaging)</td>
 fan-out limits, cascade breakers, message provenance, ensemble graph
 evidence</td>
 </tr>
-<tr class="odd">
+<tr>
 <td style="text-align: left;">Agent &lt;-&gt; Tool/Data connectors
 (capabilities, resources, data access)</td>
 <td style="text-align: left;">MCP or equivalent</td>
@@ -998,7 +999,7 @@ Gateway</td>
 tiers, consent/permissions, sampling controls, connector attestation,
 context provenance</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: left;">Tool/Connector requests model
 sampling</td>
 <td style="text-align: left;">MCP sampling flows or equivalents</td>
@@ -1007,7 +1008,7 @@ sampling</td>
 enforcement, evidence capture, deny-by-default for server-initiated
 sampling when prohibited</td>
 </tr>
-<tr class="odd">
+<tr>
 <td style="text-align: left;">Agent output becomes executable
 action</td>
 <td style="text-align: left;">N/A</td>
@@ -1324,7 +1325,8 @@ Intent <span class="math inline">→</span> Policy <span
 class="math inline">→</span> Mediated Action <span
 class="math inline">→</span> Evidence</h2>
 <figure>
-<img src="papers/acp-ra/diagrams/acp_action_flow.png" />
+<img src="papers/acp-ra/diagrams/acp_action_flow.png"
+style="height:72.0%" />
 <figcaption>Action Loop</figcaption>
 </figure>
 <p>Narrative flow:</p>
@@ -1350,8 +1352,8 @@ Loop: Artifacts <span class="math inline">→</span> Tests <span
 class="math inline">→</span> Promotion <span
 class="math inline">→</span> Enforcement</h2>
 <figure>
-<img
-src="papers/acp-ra/diagrams/acp_governance_lifecycle_compact.png" />
+<img src="papers/acp-ra/diagrams/acp_governance_lifecycle_compact.png"
+style="height:72.0%" />
 <figcaption>Governance Lifecycle</figcaption>
 </figure>
 <p>ACP governance is GitOps-oriented:</p>

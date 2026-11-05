@@ -44,7 +44,7 @@ a force multiplier—an assistant that amplifies human efficiency in tasks
 like software development lifecycle (SDLC) processes, code generation,
 and analysis—while humans remain the limiting factor for scale and
 tempo. This phase is valuable but inherently capped, because it assumes
-the systems throughput, authority, and accountability remain
+the system's throughput, authority, and accountability remain
 fundamentally bounded by human oversight and capacity.</p>
 <p>In contrast, the horizon reveals force creation: autonomous agents
 driven by high-level intents, decoupling operational scale from human
@@ -53,24 +53,25 @@ In this paper, an ‘agent’ is a software system that can plan, invoke
 tools, and execute actions toward a goal within bounded authority.</p>
 <p>This shift is not speculative. Industry leaders like Anthropic CEO
 Dario Amodei have observed: “I have engineers within Anthropic who say I
-dont write any code anymore. I just let the model write the code, I edit
-it,” projecting AI handling most or all coding end-to-end within 6–12
-months[1]. OpenAI CEO Sam Altman echoes: “We believe that, in 2025, we
-may see the first AI agents join the workforce and materially change the
-output of companies”[2]. In a recent update, Altman further emphasized
-the democratizing power of this technology: “By the end of this year,
-for $100–$1000 of inference and a good idea, youll be able to create a
-company that could have been a unicorn 10 years ago”[3]. Elon Musk, CEO
-of xAI and Tesla, frames the competitive implication starkly: “Companies
-that are entirely AI will demolish companies that are not”[4],
-underscoring that AI-native entities will operate at speeds and scales
-unattainable by legacy systems, making adaptation non-optional. The DoWs
-own “Artificial Intelligence Strategy” (released January 9, 2026)
-acknowledges this momentum, calling for an “AI-first” warfighting force
-and initiatives like the “Agent Network” for AI-enabled battle
-management[5]. Yet, the strategys emphasis on experimentation and
-decision support risks underplaying the full autonomy required for force
-creation, potentially leaving the DoW vulnerable.</p>
+don't write any code anymore. I just let the model write the code, I
+edit it,” projecting AI handling most or all coding end-to-end within
+6–12 months[1]. OpenAI CEO Sam Altman echoes: “We believe that, in 2025,
+we may see the first AI agents 'join the workforce' and materially
+change the output of companies”[2]. In a recent update, Altman further
+emphasized the democratizing power of this technology: “By the end of
+this year, for $100–$1000 of inference and a good idea, you'll be able
+to create a company that could have been a unicorn 10 years ago”[3].
+Elon Musk, CEO of xAI and Tesla, frames the competitive implication
+starkly: “Companies that are entirely AI will demolish companies that
+are not”[4], underscoring that AI-native entities will operate at speeds
+and scales unattainable by legacy systems, making adaptation
+non-optional. The DoW's own “Artificial Intelligence Strategy” (released
+January 9, 2026) acknowledges this momentum, calling for an “AI-first”
+warfighting force and initiatives like the “Agent Network” for
+AI-enabled battle management[5]. Yet, the strategy's emphasis on
+experimentation and decision support risks underplaying the full
+autonomy required for force creation, potentially leaving the DoW
+vulnerable.</p>
 <p>Central to this transition is the trust scope of agentics and
 autonomy: How much can we rely on these systems in classified, high-risk
 environments? Trust encompasses reliability, ethical alignment,
@@ -91,10 +92,10 @@ Check: Why Agents Didn’t ‘Join the Workforce’ in 2025</h1>
 <p>Optimistic forecasts from leaders like Altman and Amodei suggested
 2025 would see AI agents transforming workflows, yet this did not fully
 materialize. As Cal Newport reflected in his January 2026 essay, “Why
-Didnt AI Join the Workforce in 2025?”, agents struggled with reliability
-outside constrained environments, often failing in dynamic, real-world
-settings due to issues like context drift and unpredictable
-interactions[6]. Similarly, The New Yorkers 2025-in-review piece noted
+Didn't AI 'Join the Workforce' in 2025?”, agents struggled with
+reliability outside constrained environments, often failing in dynamic,
+real-world settings due to issues like context drift and unpredictable
+interactions[6]. Similarly, The New Yorker's 2025-in-review piece noted
 that agents excelled in text-based terminals but faltered in broader
 applications, labeling 2025 as the start of a “decade of the agent”
 rather than an immediate revolution[7]. This reframes force creation as
@@ -138,7 +139,7 @@ copilots”</em>), this section makes the ceiling explicit.</p>
 <div class="center">
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th style="text-align: left;"><strong>Dimension</strong></th>
 <th style="text-align: left;"><strong>Force Multiplication
 (Assistants)</strong></th>
@@ -147,36 +148,36 @@ copilots”</em>), this section makes the ceiling explicit.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td style="text-align: left;">Primary unit of output</td>
 <td style="text-align: left;">Human-hours amplified</td>
 <td style="text-align: left;">Agent-hours executed within trust
 scopes</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: left;">Bottleneck</td>
 <td style="text-align: left;">Human attention / approvals</td>
 <td style="text-align: left;">Compute + authority + context
 freshness</td>
 </tr>
-<tr class="odd">
+<tr>
 <td style="text-align: left;">Control surface</td>
 <td style="text-align: left;">Prompting / UI workflows</td>
 <td style="text-align: left;">Control plane: policy-as-code, tool
 mediation, audit, budgets</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: left;">Failure shape</td>
 <td style="text-align: left;">Wrong answer / bad suggestion</td>
 <td style="text-align: left;">Wrong action at machine speed</td>
 </tr>
-<tr class="odd">
+<tr>
 <td style="text-align: left;">Governance need</td>
 <td style="text-align: left;">Review + training</td>
 <td style="text-align: left;">Trust scopes + regression gates + kill
 switch + immutable logs</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: left;">Tempo limit</td>
 <td style="text-align: left;">Approval latency dominates</td>
 <td style="text-align: left;">Execution density dominates (bounded by
@@ -289,9 +290,9 @@ examples for clarity:</p>
       - policy_as_code_enforcement
     kill_switch: true
     immutable_audit_logging: true</code></pre>
-<p>This expanded framework can be integrated into DoWs ATO processes,
+<p>This expanded framework can be integrated into DoW's ATO processes,
 with initial pilots in Category A agents to build confidence. It
-directly addresses the strategys call for “model objectivity” by
+directly addresses the strategy's call for “model objectivity” by
 requiring verifiable artifacts, while enabling rapid deployment through
 predefined thresholds. For auditability, manifests should be
 version-controlled (e.g., via Azure DevOps, as in the prior white paper
@@ -389,7 +390,7 @@ success.</p></li>
 <li><p><strong>Silent Drift</strong>: Stale contexts leading to
 confident but erroneous outputs.</p></li>
 </ul>
-<p>Tie this to programs like DARPAs AI Cyber Challenge, which develops
+<p>Tie this to programs like DARPA's AI Cyber Challenge, which develops
 autonomous systems for vulnerability identification and patching, as
 described in Congressional Research Service reports (CRS, 2026). Robust
 control planes mitigate these, ensuring trust in contested
@@ -433,9 +434,9 @@ regression suite, red-team scripts).</p></li>
 (model/system/data cards; acceptable use policy; feedback
 mechanism).</p></li>
 </ul>
-<p>This dovetails with OMB M-26–04s emphasis on vendor documentation and
-agency reporting for unbiased AI, applied “to the extent practicable” in
-national security systems (OMB M-26–04, 2025).</p>
+<p>This dovetails with OMB M-26–04's emphasis on vendor documentation
+and agency reporting for unbiased AI, applied “to the extent
+practicable” in national security systems (OMB M-26–04, 2025).</p>
 <h1 id="battlespace-as-a-compute-and-agency-competition">Battlespace as
 a Compute-and-Agency Competition</h1>
 <p>By 2030, conflict advantage will increasingly be determined by
@@ -548,7 +549,7 @@ not full autonomy. It emphasizes compute scaling but lacks explicit
 trust protocols for intent-driven execution, missing the “write specs”
 alignment (DoW AI Strategy, 2026,
 media.defense.gov/2026/01/09/DoD-AI-Strategy.pdf).</p></li>
-<li><p><strong>DARPAs AI Cyber Challenge (CRS, January 2026)</strong>:
+<li><p><strong>DARPA's AI Cyber Challenge (CRS, January 2026)</strong>:
 Autonomous threat response, yet still human-supervised, highlighting
 trust gaps in classified missions (Federal News Network, January 2026,
 federalnewsnetwork.com/darpa-ai-cyber-challenge). Agents here assist
@@ -563,7 +564,7 @@ objectivity” without comprehensive autonomy benchmarks, per White House
 guidance (M-26–04, December 2025,
 whitehouse.gov/omb/memoranda/m-26–04).</p></li>
 </ul>
-<p>These cases underscore the DoWs risk of paralysis by underestimating
+<p>These cases underscore the DoW's risk of paralysis by underestimating
 force creation, as adversaries advance (e.g., geopolitical AI
 competition, CFR, January 2026,
 cfr.org/report/geopolitical-ai-competition). Integrating “write specs”
@@ -643,7 +644,7 @@ id="policy-recommendations-bridging-the-gap-to-force-creation">Policy
 Recommendations: Bridging the Gap to Force Creation</h1>
 <ul>
 <li><p><strong>Enhance Trust Scopes</strong>: Adopt the proposed
-framework and manifests, building on DoWs objectivity criteria and OMB
+framework and manifests, building on DoW's objectivity criteria and OMB
 M-26–04 unbiased AI principles (OMB M-26–04, 2025), incorporating
 context engineering for spec-based operations.</p></li>
 <li><p><strong>Accelerate Force Creation Pilots</strong>: Expand “Agent

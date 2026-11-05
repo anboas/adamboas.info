@@ -315,27 +315,27 @@ block and excluding <code>evidence.envelopeHash</code> (to avoid self-reference)
 <p>Trust scopes and ensembles reference consequence tiers explicitly. Consequence is the most effective way to translate “mission impact” into enforceable controls.</p>
 <table>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Tier</td>
 <td>Representative activities (non-exhaustive)</td>
 <td>Minimum required controls</td>
 </tr>
-<tr class="even">
+<tr>
 <td><strong>T0 — Low</strong></td>
 <td>drafting, summarization, analysis with read-only context</td>
 <td>NPE identity; data/tag controls; basic evidence logging; deny-by-default tool use</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><strong>T1 — Moderate</strong></td>
 <td>PR creation, ticket automation, config recommendations (no direct apply)</td>
 <td>tool mediation; budgets (tokens/tool calls/egress); baseline eval pack; drift monitoring</td>
 </tr>
-<tr class="even">
+<tr>
 <td><strong>T2 — High</strong></td>
 <td>executing changes in production, account/permission changes, external comms; GUI-based operations in controlled environments</td>
 <td>human-on-the-loop approvals; dual-control for sensitive actions; enhanced evidence; rollback rehearsal</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><strong>T3 — Life/Safety /
 Mission-Critical</strong></td>
 <td>actions affecting safety, critical infrastructure, or kinetic-adjacent effects</td>
@@ -588,31 +588,31 @@ evaluated + constrained)</p></li>
 <p>A2A and MCP address different interoperability surfaces. The ACP governs both by applying the same policy primitives—identity, trust scope, budgets, and evidence—at the appropriate gateway.</p>
 <table>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Interop surface</td>
 <td>Typical protocol family</td>
 <td>ACP enforcement boundary</td>
 <td>Governance focus</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Agent &lt;-&gt; Agent (delegation, coordination, swarm messaging)</td>
 <td>A2A or equivalent</td>
 <td>Inter-Agent Gateway (IAG)</td>
 <td>peer allowlists, message-type schemas, fan-out limits, cascade breakers, message provenance, ensemble graph evidence</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Agent &lt;-&gt; Tool/Data connectors (capabilities, resources, data access)</td>
 <td>MCP or equivalent</td>
 <td>Tool/Action Gateway + Context/Data Gateway</td>
 <td>tool allowlists, connector provenance tiers, consent/permissions, sampling controls, connector attestation, context provenance</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Tool/Connector requests model sampling</td>
 <td>MCP sampling flows or equivalents</td>
 <td>Model Gateway (with policy hooks)</td>
 <td>model selection control, budget enforcement, evidence capture, deny-by-default for server-initiated sampling when prohibited</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Agent output becomes executable action</td>
 <td>N/A</td>
 <td>Tool/Action Gateway</td>
